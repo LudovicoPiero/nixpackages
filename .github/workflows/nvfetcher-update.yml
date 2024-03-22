@@ -7,7 +7,7 @@ on:
 
 jobs:
   nvfetcher-update:
-    if: github.repository == 'ludovicopiero/dotfiles' # Don't do this in forks
+    if: github.repository == 'ludovicopiero/nixpackages' # Don't do this in forks
     runs-on: ubuntu-latest
     outputs:
       id: pr

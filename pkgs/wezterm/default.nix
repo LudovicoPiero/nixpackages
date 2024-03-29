@@ -30,10 +30,19 @@
   nixosTests,
   runCommand,
   vulkan-loader,
-  sources,
+  fetchFromGitHub,
 }:
 rustPlatform.buildRustPackage rec {
-  inherit (sources.wezterm) pname version src;
+  pname = "wezterm";
+  version = "e5ac32f297cf3dd8f6ea280c130103f3cac4dddb";
+
+  src = fetchFromGitHub {
+    owner = "wez";
+    repo = "wezterm";
+    fetchSubmodules = true;
+    rev = "${version}";
+    hash = "sha256-XjNzpcgqKuz6It6wBPJYtbieFglN4KqEKB306Qvpue0=";
+  };
 
   postPatch = ''
     echo ${version} > .tag
@@ -42,7 +51,12 @@ rustPlatform.buildRustPackage rec {
     rm -r wezterm-ssh/tests
   '';
 
-  cargoLock = sources.wezterm.cargoLock."Cargo.lock";
+  cargoLock = {
+    lockFile = "${src}/Cargo.lock";
+    outputHashes = {
+      "xcb-imdkit-0.3.0" = "sha256-fTpJ6uNhjmCWv7dZqVgYuS2Uic36XNYTbqlaly5QBjI=";
+    };
+  };
 
   nativeBuildInputs =
     [

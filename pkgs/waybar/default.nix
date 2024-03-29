@@ -61,7 +61,6 @@
   upowerSupport ? true,
   wireplumberSupport ? true,
   withMediaPlayer ? mprisSupport && false,
-  sources,
 }: let
   # Derived from subprojects/cava.wrap
   libcava.src = fetchFromGitHub {
@@ -72,7 +71,15 @@
   };
 in
   stdenv.mkDerivation (finalAttrs: {
-    inherit (sources.waybar) pname version src;
+    pname = "waybar";
+    version = "ddc767cd815a7c429bc4dd7f185fad93e485271d";
+
+    src = fetchFromGitHub {
+      owner = "alexays";
+      repo = "waybar";
+      rev = "${finalAttrs.version}";
+      hash = "sha256-dQW43ZxDrBvMCefvTCjaV3hEpYCU6KTJl/JxR8XZhwM=";
+    };
 
     postUnpack = lib.optional cavaSupport ''
       pushd "$sourceRoot"

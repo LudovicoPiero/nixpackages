@@ -15,8 +15,7 @@
   themeVariants ? [ ], # default: default (BigSur-like theme)
   nautilusSize ? null, # default: 200px
   panelOpacity ? null, # default: 15%
-  panelSize ? null, # default: 32px
-  sources,
+  panelSize ? null, fetchFromGitHub, # default: 32px
 }:
 
 let
@@ -89,10 +88,17 @@ lib.checkListOfEnum "${pname}: alt variants"
   ]
   (single panelSize)
 
-  stdenv.mkDerivation
+  stdenv.mkDerivation (finalAttrs:
   {
+    pname = "whitesur-gtk-theme";
+    version = "6d5201848605cd4ad4d90cac2e01636a52d38f64";
 
-    inherit (sources.whitesur-gtk-theme) src version pname;
+    src = fetchFromGitHub {
+      owner = "vinceliuice";
+      repo = "whitesur-gtk-theme";
+      rev = "${finalAttrs.version}";
+      hash = "sha256-8U5JKOX5lfEMVxe+Z11s4EQY9SJtkwTFeCb1273XveI=";
+    };
 
     nativeBuildInputs = [
       glib
@@ -148,6 +154,6 @@ lib.checkListOfEnum "${pname}: alt variants"
       homepage = "https://github.com/vinceliuice/WhiteSur-gtk-theme";
       license = licenses.mit;
       platforms = platforms.unix;
-      maintainers = [ maintainers.romildo ];
+      maintainers = [ maintainers.ludovicopiero ];
     };
-  }
+  })

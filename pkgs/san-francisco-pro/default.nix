@@ -1,10 +1,18 @@
 {
   lib,
   stdenvNoCC,
-  sources,
+  fetchFromGitHub,
 }:
-stdenvNoCC.mkDerivation {
-  inherit (sources.san-francisco-pro) pname version src;
+stdenvNoCC.mkDerivation (finalAttrs: {
+  pname = "san-francisco-pro";
+  version = "8bfea09aa6f1139479f80358b2e1e5c6dc991a58";
+
+  src = fetchFromGitHub {
+    owner = "sahibjotsaggu";
+    repo = "San-Francisco-Pro-Fonts";
+    rev = "${finalAttrs.version}";
+    hash = "sha256-mAXExj8n8gFHq19HfGy4UOJYKVGPYgarGd/04kUIqX4=";
+  };
 
   buildPhase = ''
     runHook preBuild
@@ -24,4 +32,4 @@ stdenvNoCC.mkDerivation {
     maintainers = with maintainers; [ludovicopiero];
     platforms = platforms.all;
   };
-}
+})

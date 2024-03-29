@@ -42,16 +42,16 @@
   };
   waybar = {
     pname = "waybar";
-    version = "b652b4296d4e953b08c4886467fb521f8ae716be";
+    version = "ddc767cd815a7c429bc4dd7f185fad93e485271d";
     src = fetchgit {
       url = "https://github.com/alexays/waybar";
-      rev = "b652b4296d4e953b08c4886467fb521f8ae716be";
+      rev = "ddc767cd815a7c429bc4dd7f185fad93e485271d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-mDP36IuJJAIYzzqbmKJWWZuCJtvjRtt87W5aLlipDGU=";
+      sha256 = "sha256-dQW43ZxDrBvMCefvTCjaV3hEpYCU6KTJl/JxR8XZhwM=";
     };
-    date = "2024-03-25";
+    date = "2024-03-28";
   };
   wezterm = {
     pname = "wezterm";
@@ -74,15 +74,15 @@
   };
   whitesur-gtk-theme = {
     pname = "whitesur-gtk-theme";
-    version = "5a52172d2f27437555cc58c7dad15d06af74553d";
+    version = "9739d7c08379c624b7e4c7fb662ba151dbfe34f0";
     src = fetchgit {
       url = "https://github.com/vinceliuice/WhiteSur-gtk-theme";
-      rev = "5a52172d2f27437555cc58c7dad15d06af74553d";
+      rev = "9739d7c08379c624b7e4c7fb662ba151dbfe34f0";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-9HYsORTd5n0jUYmwiObPZ90mOGhR2j+tzs6Y1NNnrn4=";
+      sha256 = "sha256-lakeBWngtzN8xA9ZWK0mAnQlRzvePSGLWCQyuzIVAPM=";
     };
-    date = "2024-02-26";
+    date = "2024-03-30";
   };
 }

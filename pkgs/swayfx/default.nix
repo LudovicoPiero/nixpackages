@@ -9,7 +9,7 @@
   enableXWayland ? true,
   systemdSupport ? lib.meta.availableOn stdenv.hostPlatform systemd,
   trayEnabled ? systemdSupport,
-  sources,
+  fetchFromGitHub,
 }:
 (sway-unwrapped.override {
   inherit
@@ -22,8 +22,16 @@
   wlroots = wlroots_0_16;
 })
 .overrideAttrs
-(_oldAttrs: {
-  inherit (sources.swayfx) pname version src;
+rec {
+  pname = "swayfx";
+  version = "d1482ad992001facc89c4bd93ee7fb6995bc134c";
+
+  src = fetchFromGitHub {
+    owner = "WillPower3309";
+    repo = "swayfx";
+    rev = "${version}";
+    hash = "sha256-nCLvUGq+M2zkPvRoaneNpabg+1sU14IkFWdXFP1LtjY=";
+  };
 
   meta = with lib; {
     description = "Sway, but with eye candy!";
@@ -41,4 +49,4 @@
       compositor functionality, which was commonly used with the i3 window manager.
     '';
   };
-})
+}

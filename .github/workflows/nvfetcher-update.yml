@@ -46,3 +46,45 @@ jobs:
           labels: automated,uwu, keep-up-to-date
           branch: "nvfetcher-update"
           delete-branch: true
+
+
+  nix-update:
+    if: github.repository == 'ludovicopiero/nixpackages' # Don't do this in forks
+    runs-on: ubuntu-latest
+    outputs:
+      id: pr
+    strategy:
+      matrix:
+        packages: [iosevka-q, sarasa-gothic]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: "${{ secrets.PR_TOKEN }}"
+
+      - name: Install nix
+        uses: cachix/install-nix-action@v26
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+
+      - name: Git config
+        run: |
+          git config --global user.email "lewdovico@gnuweeb.org"
+          git config --global user.name "Ludovico Piero"
+
+      - name: Run nvfetcher
+        run: |
+          nix run nixpkgs#nix-update --flake ${{ matrix.packages }} --commit
+
+      - name: Create Pull Request
+        id: create-pr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: "${{ secrets.PR_TOKEN }}"
+          title: "Nix-update"
+          body: "BOOMP BOOMP"
+          labels: automated,uwu, keep-up-to-date
+          branch: "nix-update"
+          delete-branch: true

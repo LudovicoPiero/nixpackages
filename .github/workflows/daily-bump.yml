@@ -26,8 +26,8 @@ jobs:
 
       - name: Git config
         run: |
-          git config --global user.email "lewdovico@gnuweeb.org"
-          git config --global user.name "Ludovico Piero"
+          git config --global user.email "maximiliansforza@proton.me"
+          git config --global user.name "Maximilian Sforza"
 
       - name: Run nvfetcher
         run: |
@@ -71,8 +71,8 @@ jobs:
 
       - name: Git config
         run: |
-          git config --global user.email "lewdovico@gnuweeb.org"
-          git config --global user.name "Ludovico Piero"
+          git config --global user.email "maximiliansforza@proton.me"
+          git config --global user.name "Maximilian Sforza"
 
       - name: Run nix-update
         run: |

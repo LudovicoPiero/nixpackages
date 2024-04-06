@@ -41,7 +41,7 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: "${{ secrets.PR_TOKEN }}"
-          title: "Nvfetcher update"
+          title: "Daily Bump"
           body: "BOOMP BOOMP"
           labels: automated,uwu, keep-up-to-date
           branch: "nvfetcher-update"
@@ -83,7 +83,7 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: "${{ secrets.PR_TOKEN }}"
-          title: "Nix-update"
+          title: "Daily Bump"
           body: "BOOMP BOOMP"
           labels: automated,uwu, keep-up-to-date
           branch: "nix-update"

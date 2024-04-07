@@ -30,10 +30,18 @@
   nixosTests,
   runCommand,
   vulkan-loader,
-  sources,
+  fetchFromGitHub,
 }:
 rustPlatform.buildRustPackage rec {
-  inherit (sources.wezterm) pname version src;
+  pname = "wezterm";
+  version = "20240203-110809-5046fc22-unstable-2024-04-06";
+
+  src = fetchFromGitHub {
+    owner = "wez";
+    repo = "wezterm";
+    rev = "cce0706b1f2a9e2d1f02c57f2d1cd367c91df1ae";
+    hash = "sha256-yaGmflPbC9V4gsLt2lvL4qaSojF29IpPmVKAxm/nCRg=";
+  };
 
   postPatch = ''
     echo ${version} > .tag
@@ -42,16 +50,19 @@ rustPlatform.buildRustPackage rec {
     rm -r wezterm-ssh/tests
   '';
 
-  cargoLock = sources.wezterm.cargoLock."Cargo.lock";
+  cargoLock = {
+    lockFile = "${src}/Cargo.lock";
+    outputHashes = {
+      "xcb-imdkit-0.3.0" = "sha256-fTpJ6uNhjmCWv7dZqVgYuS2Uic36XNYTbqlaly5QBjI=";
+    };
+  };
 
-  nativeBuildInputs =
-    [
-      installShellFiles
-      ncurses # tic for terminfo
-      pkg-config
-      python3
-    ]
-    ++ lib.optional stdenv.isDarwin perl;
+  nativeBuildInputs = [
+    installShellFiles
+    ncurses # tic for terminfo
+    pkg-config
+    python3
+  ] ++ lib.optional stdenv.isDarwin perl;
 
   buildInputs =
     [
@@ -80,7 +91,7 @@ rustPlatform.buildRustPackage rec {
       UserNotifications
     ];
 
-  buildFeatures = ["distro-defaults"];
+  buildFeatures = [ "distro-defaults" ];
 
   env.NIX_LDFLAGS = lib.optionalString stdenv.isDarwin "-framework System";
 
@@ -122,7 +133,7 @@ rustPlatform.buildRustPackage rec {
       all-terminfo = nixosTests.allTerminfo;
       terminal-emulators = nixosTests.terminal-emulators.wezterm;
     };
-    terminfo = runCommand "wezterm-terminfo" {nativeBuildInputs = [ncurses];} ''
+    terminfo = runCommand "wezterm-terminfo" { nativeBuildInputs = [ ncurses ]; } ''
       mkdir -p $out/share/terminfo $out/nix-support
       tic -x -o $out/share/terminfo ${src}/termwiz/data/wezterm.terminfo
     '';
@@ -133,6 +144,6 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://wezfurlong.org/wezterm";
     license = licenses.mit;
     mainProgram = "wezterm";
-    maintainers = with maintainers; [ludovicopiero];
+    maintainers = with maintainers; [ ludovicopiero ];
   };
 }

@@ -9,7 +9,7 @@
   enableXWayland ? true,
   systemdSupport ? lib.meta.availableOn stdenv.hostPlatform systemd,
   trayEnabled ? systemdSupport,
-  sources,
+   fetchFromGitHub,
 }:
 (sway-unwrapped.override {
   inherit
@@ -22,8 +22,16 @@
   wlroots = wlroots_0_16;
 })
 .overrideAttrs
-(_oldAttrs: {
-  inherit (sources.swayfx) pname version src;
+(oldAttrs: {
+  pname = "swayfx";
+  version = "0.3.2-unstable-2024-02-15";
+
+  src = fetchFromGitHub {
+    owner = "WillPower3309";
+    repo = "swayfx";
+    rev = "2bd366f3372d6f94f6633e62b7f7b06fcf316943";
+    hash = "sha256-kRWXQnUkMm5HjlDX9rBq8lowygvbK9+ScAOhiySR3KY=";
+  };
 
   meta = with lib; {
     description = "Sway, but with eye candy!";

@@ -1,7 +1,8 @@
 # https://github.com/FedericoSchonborn/nur-packages/blob/main/packages/firefox-gnome-theme/default.nix
 {
   lib,
-  stdenvNoCC, fetchFromGitHub,
+  stdenvNoCC,
+  fetchFromGitHub,
 }:
 stdenvNoCC.mkDerivation (finalAttrs: {
   pname = "firefox-gnome-theme";
@@ -27,6 +28,6 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "A GNOME theme for Firefox";
     homepage = "https://github.com/rafaelmardojai/firefox-gnome-theme";
     license = lib.licenses.unlicense;
-    maintainers = with lib.maintainers; [ ludovicopiero ];
+    maintainers = with lib.maintainers; [ludovicopiero];
   };
 })

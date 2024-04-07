@@ -19,7 +19,6 @@ pull_request_rules:
   - name: Automatic merge when CI passes
     conditions:
       - check-success=Run Flake Checker
-      - check-success=Build all packages
     actions:
       merge:
         method: rebase

@@ -1,11 +1,18 @@
 # https://github.com/FedericoSchonborn/nur-packages/blob/main/packages/firefox-gnome-theme/default.nix
 {
   lib,
-  stdenvNoCC,
-  sources,
+  stdenvNoCC, fetchFromGitHub,
 }:
-stdenvNoCC.mkDerivation (_finalAttrs: {
-  inherit (sources.firefox-gnome-theme) pname src version;
+stdenvNoCC.mkDerivation (finalAttrs: {
+  pname = "firefox-gnome-theme";
+  version = "122-unstable-2024-03-24";
+
+  src = fetchFromGitHub {
+    owner = "rafaelmardojai";
+    repo = "firefox-gnome-theme";
+    rev = "33015314c12190230295cff61ced148e0f7ffe1c";
+    hash = "sha256-e1xuHAHgeC8EU7cAIa3XfvzgI4Y7rzyTkAt9sBsgrfc=";
+  };
 
   installPhase = ''
     runHook preInstall
@@ -20,6 +27,6 @@ stdenvNoCC.mkDerivation (_finalAttrs: {
     description = "A GNOME theme for Firefox";
     homepage = "https://github.com/rafaelmardojai/firefox-gnome-theme";
     license = lib.licenses.unlicense;
-    maintainers = with lib.maintainers; [ludovicopiero];
+    maintainers = with lib.maintainers; [ ludovicopiero ];
   };
 })

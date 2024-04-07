@@ -6,7 +6,7 @@
 }:
 stdenvNoCC.mkDerivation (finalAttrs: {
   pname = "firefox-gnome-theme";
-  version = "122-unstable-2024-03-24";
+  version = "122";
 
   src = fetchFromGitHub {
     owner = "rafaelmardojai";

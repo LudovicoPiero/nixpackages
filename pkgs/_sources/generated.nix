@@ -29,29 +29,29 @@
   };
   swayfx = {
     pname = "swayfx";
-    version = "2bd366f3372d6f94f6633e62b7f7b06fcf316943";
+    version = "167a4ea0aec93d51e4c606ffdbe3a195d12da6e3";
     src = fetchgit {
       url = "https://github.com/WillPower3309/swayfx";
-      rev = "2bd366f3372d6f94f6633e62b7f7b06fcf316943";
+      rev = "167a4ea0aec93d51e4c606ffdbe3a195d12da6e3";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-kRWXQnUkMm5HjlDX9rBq8lowygvbK9+ScAOhiySR3KY=";
+      sha256 = "sha256-nLrg/congNWRJ75KtW/Oz35TgaYQ2T5sl4ZsQADn6q4=";
     };
-    date = "2024-02-15";
+    date = "2024-04-10";
   };
   waybar = {
     pname = "waybar";
-    version = "42dc9cb85f27e3db02da83cd13624cfc5a7191d3";
+    version = "e8038ef9f3d85f41821a93fcc6de3310ececab2c";
     src = fetchgit {
       url = "https://github.com/alexays/waybar";
-      rev = "42dc9cb85f27e3db02da83cd13624cfc5a7191d3";
+      rev = "e8038ef9f3d85f41821a93fcc6de3310ececab2c";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-R3yPS5ktvzhUI+TeHTDkbKgiA8SDvozu33azFUeMVoo=";
+      sha256 = "sha256-ft0ETC6x4noYnZcWJOn+zSQbQNKfZhtPGgeMxleBLZE=";
     };
-    date = "2024-04-03";
+    date = "2024-04-10";
   };
   wezterm = {
     pname = "wezterm";

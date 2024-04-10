@@ -39,7 +39,7 @@
     },
     "swayfx": {
         "cargoLocks": null,
-        "date": "2024-02-15",
+        "date": "2024-04-10",
         "extract": null,
         "name": "swayfx",
         "passthru": null,
@@ -49,16 +49,16 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "2bd366f3372d6f94f6633e62b7f7b06fcf316943",
-            "sha256": "sha256-kRWXQnUkMm5HjlDX9rBq8lowygvbK9+ScAOhiySR3KY=",
+            "rev": "167a4ea0aec93d51e4c606ffdbe3a195d12da6e3",
+            "sha256": "sha256-nLrg/congNWRJ75KtW/Oz35TgaYQ2T5sl4ZsQADn6q4=",
             "type": "git",
             "url": "https://github.com/WillPower3309/swayfx"
         },
-        "version": "2bd366f3372d6f94f6633e62b7f7b06fcf316943"
+        "version": "167a4ea0aec93d51e4c606ffdbe3a195d12da6e3"
     },
     "waybar": {
         "cargoLocks": null,
-        "date": "2024-04-03",
+        "date": "2024-04-10",
         "extract": null,
         "name": "waybar",
         "passthru": null,
@@ -68,12 +68,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "42dc9cb85f27e3db02da83cd13624cfc5a7191d3",
-            "sha256": "sha256-R3yPS5ktvzhUI+TeHTDkbKgiA8SDvozu33azFUeMVoo=",
+            "rev": "e8038ef9f3d85f41821a93fcc6de3310ececab2c",
+            "sha256": "sha256-ft0ETC6x4noYnZcWJOn+zSQbQNKfZhtPGgeMxleBLZE=",
             "type": "git",
             "url": "https://github.com/alexays/waybar"
         },
-        "version": "42dc9cb85f27e3db02da83cd13624cfc5a7191d3"
+        "version": "e8038ef9f3d85f41821a93fcc6de3310ececab2c"
     },
     "wezterm": {
         "cargoLocks": {

@@ -129,7 +129,7 @@ assert (extraParameters != null) -> set != null;
       if set != null
       then "Iosevka${set}"
       else "Iosevka";
-    version = "29.1.0";
+    version = "29.2.0";
 
     src = fetchFromGitHub {
       owner = "be5invis";

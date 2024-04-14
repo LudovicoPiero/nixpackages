@@ -23,3 +23,8 @@ fetch.git = "https://github.com/vinceliuice/WhiteSur-gtk-theme"
 [swayfx]
 src.git = "https://github.com/WillPower3309/swayfx"
 fetch.git = "https://github.com/WillPower3309/swayfx"
+
+[vesktop]
+src.git = "https://github.com/kaitlynkittyy/Vesktop/"
+src.branch = "hardware-accel"
+fetch.git = "https://github.com/kaitlynkittyy/Vesktop/"

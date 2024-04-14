@@ -56,9 +56,28 @@
         },
         "version": "167a4ea0aec93d51e4c606ffdbe3a195d12da6e3"
     },
+    "vesktop": {
+        "cargoLocks": null,
+        "date": "2024-04-14",
+        "extract": null,
+        "name": "vesktop",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "f1f1c9a7fda4838c9a9e9b710fac05805ce5e382",
+            "sha256": "sha256-JnydrI2kEaAXeJk3rTuXPL934YQXStAvHFyatBb4ga8=",
+            "type": "git",
+            "url": "https://github.com/kaitlynkittyy/Vesktop/"
+        },
+        "version": "f1f1c9a7fda4838c9a9e9b710fac05805ce5e382"
+    },
     "waybar": {
         "cargoLocks": null,
-        "date": "2024-04-10",
+        "date": "2024-04-14",
         "extract": null,
         "name": "waybar",
         "passthru": null,
@@ -68,12 +87,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "e8038ef9f3d85f41821a93fcc6de3310ececab2c",
-            "sha256": "sha256-ft0ETC6x4noYnZcWJOn+zSQbQNKfZhtPGgeMxleBLZE=",
+            "rev": "ddacb111a9953332f7cbf0b9812b67731c827a38",
+            "sha256": "sha256-anyId+jvF/uBFQ3VwpFU5S640rLSM9/FPT3X54OYcgo=",
             "type": "git",
             "url": "https://github.com/alexays/waybar"
         },
-        "version": "e8038ef9f3d85f41821a93fcc6de3310ececab2c"
+        "version": "ddacb111a9953332f7cbf0b9812b67731c827a38"
     },
     "wezterm": {
         "cargoLocks": {

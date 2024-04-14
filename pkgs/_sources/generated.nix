@@ -40,18 +40,31 @@
     };
     date = "2024-04-10";
   };
-  waybar = {
-    pname = "waybar";
-    version = "e8038ef9f3d85f41821a93fcc6de3310ececab2c";
+  vesktop = {
+    pname = "vesktop";
+    version = "f1f1c9a7fda4838c9a9e9b710fac05805ce5e382";
     src = fetchgit {
-      url = "https://github.com/alexays/waybar";
-      rev = "e8038ef9f3d85f41821a93fcc6de3310ececab2c";
+      url = "https://github.com/kaitlynkittyy/Vesktop/";
+      rev = "f1f1c9a7fda4838c9a9e9b710fac05805ce5e382";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-ft0ETC6x4noYnZcWJOn+zSQbQNKfZhtPGgeMxleBLZE=";
+      sha256 = "sha256-JnydrI2kEaAXeJk3rTuXPL934YQXStAvHFyatBb4ga8=";
     };
-    date = "2024-04-10";
+    date = "2024-04-14";
+  };
+  waybar = {
+    pname = "waybar";
+    version = "ddacb111a9953332f7cbf0b9812b67731c827a38";
+    src = fetchgit {
+      url = "https://github.com/alexays/waybar";
+      rev = "ddacb111a9953332f7cbf0b9812b67731c827a38";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-anyId+jvF/uBFQ3VwpFU5S640rLSM9/FPT3X54OYcgo=";
+    };
+    date = "2024-04-14";
   };
   wezterm = {
     pname = "wezterm";

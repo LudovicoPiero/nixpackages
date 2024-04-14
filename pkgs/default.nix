@@ -17,6 +17,8 @@
 
       spotify = pkgs.callPackage ./spotify {};
 
+      vesktop = pkgs.callPackage ./vesktop {inherit sources;};
+
       waybar = pkgs.callPackage ./waybar {inherit sources;};
 
       wezterm = pkgs.darwin.apple_sdk_11_0.callPackage ./wezterm {

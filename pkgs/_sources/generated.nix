@@ -29,27 +29,27 @@
   };
   swayfx = {
     pname = "swayfx";
-    version = "167a4ea0aec93d51e4c606ffdbe3a195d12da6e3";
+    version = "477686adb0cf21f2b7be40c7017d17222e0522d0";
     src = fetchgit {
       url = "https://github.com/WillPower3309/swayfx";
-      rev = "167a4ea0aec93d51e4c606ffdbe3a195d12da6e3";
+      rev = "477686adb0cf21f2b7be40c7017d17222e0522d0";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-nLrg/congNWRJ75KtW/Oz35TgaYQ2T5sl4ZsQADn6q4=";
+      sha256 = "sha256-TnDJlgfIfzETRd8Gyku5vLIXyZp10WEffzeiKK9lDn8=";
     };
-    date = "2024-04-10";
+    date = "2024-04-14";
   };
   vesktop = {
     pname = "vesktop";
-    version = "f1f1c9a7fda4838c9a9e9b710fac05805ce5e382";
+    version = "3fdc55a47e48d0bfd0bfa5cc9f9f566a57d99417";
     src = fetchgit {
       url = "https://github.com/kaitlynkittyy/Vesktop/";
-      rev = "f1f1c9a7fda4838c9a9e9b710fac05805ce5e382";
+      rev = "3fdc55a47e48d0bfd0bfa5cc9f9f566a57d99417";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-JnydrI2kEaAXeJk3rTuXPL934YQXStAvHFyatBb4ga8=";
+      sha256 = "sha256-K6+G82yIQgi5NhYOobDYlqvPzFhPSg4NDdmPy8PHwVI=";
     };
     date = "2024-04-14";
   };

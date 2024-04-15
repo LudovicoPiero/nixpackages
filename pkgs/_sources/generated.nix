@@ -29,16 +29,16 @@
   };
   swayfx = {
     pname = "swayfx";
-    version = "477686adb0cf21f2b7be40c7017d17222e0522d0";
+    version = "62472238caa0cba06e8186e3adfb36ade65e6ce3";
     src = fetchgit {
       url = "https://github.com/WillPower3309/swayfx";
-      rev = "477686adb0cf21f2b7be40c7017d17222e0522d0";
+      rev = "62472238caa0cba06e8186e3adfb36ade65e6ce3";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-TnDJlgfIfzETRd8Gyku5vLIXyZp10WEffzeiKK9lDn8=";
+      sha256 = "sha256-b7/vA3Xdqq0e19PIexuFfNqJb3UgYsBdjHh09U6yq3U=";
     };
-    date = "2024-04-14";
+    date = "2024-04-15";
   };
   vesktop = {
     pname = "vesktop";

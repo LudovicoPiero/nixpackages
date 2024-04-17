@@ -3,16 +3,16 @@
 {
   firefox-gnome-theme = {
     pname = "firefox-gnome-theme";
-    version = "a95be99b28fdf1c33f1399a387eb594cf9bffc99";
+    version = "7ef7468860816822d448a335a446e76549f1b45d";
     src = fetchgit {
       url = "https://github.com/rafaelmardojai/firefox-gnome-theme";
-      rev = "a95be99b28fdf1c33f1399a387eb594cf9bffc99";
+      rev = "7ef7468860816822d448a335a446e76549f1b45d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-NOfsWKOLifmRLIySbjlJFFLuRT8UVyLeZItuLCjvIno=";
+      sha256 = "sha256-bIvwxisJyO6gLP0gD7P4L8iaklVIM34+0wPIRqtJkNA=";
     };
-    date = "2024-04-08";
+    date = "2024-04-17";
   };
   san-francisco-pro = {
     pname = "san-francisco-pro";
@@ -29,29 +29,29 @@
   };
   vesktop = {
     pname = "vesktop";
-    version = "3fdc55a47e48d0bfd0bfa5cc9f9f566a57d99417";
+    version = "1d5000e619ad44ceb6b27240d38a68fe1c5f039a";
     src = fetchgit {
       url = "https://github.com/kaitlynkittyy/Vesktop/";
-      rev = "3fdc55a47e48d0bfd0bfa5cc9f9f566a57d99417";
+      rev = "1d5000e619ad44ceb6b27240d38a68fe1c5f039a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-K6+G82yIQgi5NhYOobDYlqvPzFhPSg4NDdmPy8PHwVI=";
+      sha256 = "sha256-mpMb+jvm9xQRyO+mdHEYU7z31MpxI3xK6KzjIbRpt3Y=";
     };
-    date = "2024-04-14";
+    date = "2024-04-17";
   };
   waybar = {
     pname = "waybar";
-    version = "3efebc282294c78f7312b70d2f18e3df3daacd91";
+    version = "dd092a5fc11b373b4c73ff7e4fb902c09d87e955";
     src = fetchgit {
       url = "https://github.com/alexays/waybar";
-      rev = "3efebc282294c78f7312b70d2f18e3df3daacd91";
+      rev = "dd092a5fc11b373b4c73ff7e4fb902c09d87e955";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-X8bn+q9/lcTmODxqLF9jm/ZuakRWgATrEJLPDsYO3dc=";
+      sha256 = "sha256-wjSRLR/iu48spBlQUshYX9jPUb5CS2MYuru9NqoU7Bk=";
     };
-    date = "2024-04-15";
+    date = "2024-04-17";
   };
   wezterm = {
     pname = "wezterm";

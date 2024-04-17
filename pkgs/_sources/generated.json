@@ -1,7 +1,7 @@
 {
     "firefox-gnome-theme": {
         "cargoLocks": null,
-        "date": "2024-04-08",
+        "date": "2024-04-17",
         "extract": null,
         "name": "firefox-gnome-theme",
         "passthru": null,
@@ -11,12 +11,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "a95be99b28fdf1c33f1399a387eb594cf9bffc99",
-            "sha256": "sha256-NOfsWKOLifmRLIySbjlJFFLuRT8UVyLeZItuLCjvIno=",
+            "rev": "7ef7468860816822d448a335a446e76549f1b45d",
+            "sha256": "sha256-bIvwxisJyO6gLP0gD7P4L8iaklVIM34+0wPIRqtJkNA=",
             "type": "git",
             "url": "https://github.com/rafaelmardojai/firefox-gnome-theme"
         },
-        "version": "a95be99b28fdf1c33f1399a387eb594cf9bffc99"
+        "version": "7ef7468860816822d448a335a446e76549f1b45d"
     },
     "san-francisco-pro": {
         "cargoLocks": null,
@@ -39,7 +39,7 @@
     },
     "vesktop": {
         "cargoLocks": null,
-        "date": "2024-04-14",
+        "date": "2024-04-17",
         "extract": null,
         "name": "vesktop",
         "passthru": null,
@@ -49,16 +49,16 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "3fdc55a47e48d0bfd0bfa5cc9f9f566a57d99417",
-            "sha256": "sha256-K6+G82yIQgi5NhYOobDYlqvPzFhPSg4NDdmPy8PHwVI=",
+            "rev": "1d5000e619ad44ceb6b27240d38a68fe1c5f039a",
+            "sha256": "sha256-mpMb+jvm9xQRyO+mdHEYU7z31MpxI3xK6KzjIbRpt3Y=",
             "type": "git",
             "url": "https://github.com/kaitlynkittyy/Vesktop/"
         },
-        "version": "3fdc55a47e48d0bfd0bfa5cc9f9f566a57d99417"
+        "version": "1d5000e619ad44ceb6b27240d38a68fe1c5f039a"
     },
     "waybar": {
         "cargoLocks": null,
-        "date": "2024-04-15",
+        "date": "2024-04-17",
         "extract": null,
         "name": "waybar",
         "passthru": null,
@@ -68,12 +68,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "3efebc282294c78f7312b70d2f18e3df3daacd91",
-            "sha256": "sha256-X8bn+q9/lcTmODxqLF9jm/ZuakRWgATrEJLPDsYO3dc=",
+            "rev": "dd092a5fc11b373b4c73ff7e4fb902c09d87e955",
+            "sha256": "sha256-wjSRLR/iu48spBlQUshYX9jPUb5CS2MYuru9NqoU7Bk=",
             "type": "git",
             "url": "https://github.com/alexays/waybar"
         },
-        "version": "3efebc282294c78f7312b70d2f18e3df3daacd91"
+        "version": "dd092a5fc11b373b4c73ff7e4fb902c09d87e955"
     },
     "wezterm": {
         "cargoLocks": {

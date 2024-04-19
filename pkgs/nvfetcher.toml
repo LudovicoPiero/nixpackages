@@ -21,6 +21,5 @@ src.git = "https://github.com/vinceliuice/WhiteSur-gtk-theme"
 fetch.git = "https://github.com/vinceliuice/WhiteSur-gtk-theme"
 
 [vesktop]
-src.git = "https://github.com/kaitlynkittyy/Vesktop/"
-src.branch = "hardware-accel"
-fetch.git = "https://github.com/kaitlynkittyy/Vesktop/"
+src.git = "https://github.com/Vencord/Vesktop/"
+fetch.git = "https://github.com/Vencord/Vesktop/"

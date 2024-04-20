@@ -39,7 +39,7 @@
     },
     "vesktop": {
         "cargoLocks": null,
-        "date": "2024-04-18",
+        "date": "2024-04-20",
         "extract": null,
         "name": "vesktop",
         "passthru": null,
@@ -49,12 +49,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "8eaa5206b98ce7029b6879cc2ce361c2ae5f6239",
-            "sha256": "sha256-k/k5mZpfIrThVwgzB4OgL6txfnWMQ2e7uAXO763PnLM=",
+            "rev": "ab9e8579eea046187c5cdb51e2041a0beb6e8601",
+            "sha256": "sha256-s3ndHHN8mqbzL40hMDXXDl+VV9pOk4XfnaVCaQvFFsg=",
             "type": "git",
             "url": "https://github.com/Vencord/Vesktop/"
         },
-        "version": "8eaa5206b98ce7029b6879cc2ce361c2ae5f6239"
+        "version": "ab9e8579eea046187c5cdb51e2041a0beb6e8601"
     },
     "waybar": {
         "cargoLocks": null,

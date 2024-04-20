@@ -78,7 +78,7 @@ stdenv.mkDerivation (finalAttrs: {
       dontBuild = true;
       dontFixup = true;
       outputHashMode = "recursive";
-      outputHash = "sha256-XgIkfPgtuII8hbt2fRNeNZpxhVaxhacw2UvC9tFA1HU=";
+      outputHash = "sha256-6ezEBeYmK5va3gCh00YnJzZ77V/Ql7A3l/+csohkz68=";
     };
 
   nativeBuildInputs = [

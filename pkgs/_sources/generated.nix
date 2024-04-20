@@ -29,16 +29,16 @@
   };
   vesktop = {
     pname = "vesktop";
-    version = "8eaa5206b98ce7029b6879cc2ce361c2ae5f6239";
+    version = "ab9e8579eea046187c5cdb51e2041a0beb6e8601";
     src = fetchgit {
       url = "https://github.com/Vencord/Vesktop/";
-      rev = "8eaa5206b98ce7029b6879cc2ce361c2ae5f6239";
+      rev = "ab9e8579eea046187c5cdb51e2041a0beb6e8601";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-k/k5mZpfIrThVwgzB4OgL6txfnWMQ2e7uAXO763PnLM=";
+      sha256 = "sha256-s3ndHHN8mqbzL40hMDXXDl+VV9pOk4XfnaVCaQvFFsg=";
     };
-    date = "2024-04-18";
+    date = "2024-04-20";
   };
   waybar = {
     pname = "waybar";

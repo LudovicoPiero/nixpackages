@@ -39,7 +39,7 @@
     },
     "vesktop": {
         "cargoLocks": null,
-        "date": "2024-04-20",
+        "date": "2024-04-21",
         "extract": null,
         "name": "vesktop",
         "passthru": null,
@@ -49,16 +49,16 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "ab9e8579eea046187c5cdb51e2041a0beb6e8601",
-            "sha256": "sha256-s3ndHHN8mqbzL40hMDXXDl+VV9pOk4XfnaVCaQvFFsg=",
+            "rev": "2733727a40a4cf542277dedcf89e87e7740f962d",
+            "sha256": "sha256-EF36HbbhTuAdwBEKqYgBBu7JoP1LJneU78bROHoKqDw=",
             "type": "git",
             "url": "https://github.com/Vencord/Vesktop/"
         },
-        "version": "ab9e8579eea046187c5cdb51e2041a0beb6e8601"
+        "version": "2733727a40a4cf542277dedcf89e87e7740f962d"
     },
     "waybar": {
         "cargoLocks": null,
-        "date": "2024-04-19",
+        "date": "2024-04-21",
         "extract": null,
         "name": "waybar",
         "passthru": null,
@@ -68,12 +68,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "937bf2ba5d5a9b00148519a694e2fa5c2fb4b4ae",
-            "sha256": "sha256-6YZSCPyDOJ/XJxPnOxque6FL0YM0sl+zbskpT3TbOjY=",
+            "rev": "5ce5ceba624e1f5b98741c20a17525883981993b",
+            "sha256": "sha256-sxU2aqnElG3QhXW+7Qf0y4EXkkNmVU3f6+Mvl0kpbs0=",
             "type": "git",
             "url": "https://github.com/alexays/waybar"
         },
-        "version": "937bf2ba5d5a9b00148519a694e2fa5c2fb4b4ae"
+        "version": "5ce5ceba624e1f5b98741c20a17525883981993b"
     },
     "wezterm": {
         "cargoLocks": {
@@ -103,7 +103,7 @@
     },
     "whitesur-gtk-theme": {
         "cargoLocks": null,
-        "date": "2024-04-19",
+        "date": "2024-04-21",
         "extract": null,
         "name": "whitesur-gtk-theme",
         "passthru": null,
@@ -113,11 +113,11 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "a3fff831fc0df4b040088b814881347d7bc0410f",
-            "sha256": "sha256-/3Q0vWCdE3U7jyeJmBHQB37648YEY10BQ3/gjTdapdc=",
+            "rev": "6c999cba11cfcac2c35d0b19021290b567202f7e",
+            "sha256": "sha256-7/AdMdXogyAO4U0TVj88ghPWwUGycwjSpEGsQPJgWg4=",
             "type": "git",
             "url": "https://github.com/vinceliuice/WhiteSur-gtk-theme"
         },
-        "version": "a3fff831fc0df4b040088b814881347d7bc0410f"
+        "version": "6c999cba11cfcac2c35d0b19021290b567202f7e"
     }
 }

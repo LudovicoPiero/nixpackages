@@ -29,43 +29,43 @@
   };
   vesktop = {
     pname = "vesktop";
-    version = "ac35f81476fc2561d437ee6e500e58e33a644c69";
+    version = "56b96bded9555d4de13fd35790958ae62ae3e903";
     src = fetchgit {
       url = "https://github.com/Vencord/Vesktop/";
-      rev = "ac35f81476fc2561d437ee6e500e58e33a644c69";
+      rev = "56b96bded9555d4de13fd35790958ae62ae3e903";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-igQU5gSTUlW4ya0Lj9nQWXEVCsO/hSt7/pJ/d5ITJJM=";
+      sha256 = "sha256-Q1bjF0Z+W0OIe7EGvCi46xwV67RKKKB8/RsEMijI2Qk=";
     };
-    date = "2024-05-05";
+    date = "2024-05-06";
   };
   waybar = {
     pname = "waybar";
-    version = "231d6972d7a023e9358ab7deda509baac49006cb";
+    version = "e627879b1656ec7352e6382f80ee16d90b377aaf";
     src = fetchgit {
       url = "https://github.com/alexays/waybar";
-      rev = "231d6972d7a023e9358ab7deda509baac49006cb";
+      rev = "e627879b1656ec7352e6382f80ee16d90b377aaf";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-mCQdrn0Y3oOVZP/CileWAhuBX6aARBNrfxyqJBB4NxA=";
+      sha256 = "sha256-LUageV0xC42MldMmYY1njkm95icBsqID1tEGy3wwrRM=";
     };
-    date = "2024-05-03";
+    date = "2024-05-06";
   };
   wezterm = {
     pname = "wezterm";
-    version = "18d643510fdc6e5b45da102bca5c421f28e92223";
+    version = "8fa4ba9ace4e3e9bb17246e6dcfe1ec175ff49aa";
     src = fetchgit {
       url = "https://github.com/wez/wezterm";
-      rev = "18d643510fdc6e5b45da102bca5c421f28e92223";
+      rev = "8fa4ba9ace4e3e9bb17246e6dcfe1ec175ff49aa";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-9UBG8cKYKhqpFiU+kYWVb25NHZ6FX5wT5xyMI0MdkEo=";
+      sha256 = "sha256-nj3lnSg8TyBCahV7RJPVSVnYDidiqxYIOTiV3//LmYY=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-18d643510fdc6e5b45da102bca5c421f28e92223/Cargo.lock;
+      lockFile = ./wezterm-8fa4ba9ace4e3e9bb17246e6dcfe1ec175ff49aa/Cargo.lock;
       outputHashes = {
         "xcb-imdkit-0.3.0" = "sha256-fTpJ6uNhjmCWv7dZqVgYuS2Uic36XNYTbqlaly5QBjI=";
         "sqlite-cache-0.1.3" = "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=";

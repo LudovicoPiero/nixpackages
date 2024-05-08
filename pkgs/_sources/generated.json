@@ -39,7 +39,7 @@
     },
     "vesktop": {
         "cargoLocks": null,
-        "date": "2024-05-06",
+        "date": "2024-05-08",
         "extract": null,
         "name": "vesktop",
         "passthru": null,
@@ -49,12 +49,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "56b96bded9555d4de13fd35790958ae62ae3e903",
-            "sha256": "sha256-Q1bjF0Z+W0OIe7EGvCi46xwV67RKKKB8/RsEMijI2Qk=",
+            "rev": "944a699e83adc11afc8d4c701f230cebba684a0f",
+            "sha256": "sha256-Ap+8iiHvqqR/OWWoR1dM7ZlCrXkVw+OnvoNa8yRN4XI=",
             "type": "git",
             "url": "https://github.com/Vencord/Vesktop/"
         },
-        "version": "56b96bded9555d4de13fd35790958ae62ae3e903"
+        "version": "944a699e83adc11afc8d4c701f230cebba684a0f"
     },
     "waybar": {
         "cargoLocks": null,
@@ -78,14 +78,14 @@
     "wezterm": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wezterm-0b50725f67154664292d83681f3f421c6567e3b5/Cargo.lock",
+                "./wezterm-d2fa4e9842bfa6a274c8a909c8f5fa12828db502/Cargo.lock",
                 {
                     "sqlite-cache-0.1.3": "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=",
                     "xcb-imdkit-0.3.0": "sha256-fTpJ6uNhjmCWv7dZqVgYuS2Uic36XNYTbqlaly5QBjI="
                 }
             ]
         },
-        "date": "2024-05-06",
+        "date": "2024-05-08",
         "extract": null,
         "name": "wezterm",
         "passthru": null,
@@ -95,12 +95,12 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "0b50725f67154664292d83681f3f421c6567e3b5",
-            "sha256": "sha256-VR2QxlwwxGKH1glMkJPLlgLDWWGlFLrwrwUcmPKnxsc=",
+            "rev": "d2fa4e9842bfa6a274c8a909c8f5fa12828db502",
+            "sha256": "sha256-DAuLy17oCr4TJDygPCeBUcliUqnAvzOFemkZPRNQKIA=",
             "type": "git",
             "url": "https://github.com/wez/wezterm"
         },
-        "version": "0b50725f67154664292d83681f3f421c6567e3b5"
+        "version": "d2fa4e9842bfa6a274c8a909c8f5fa12828db502"
     },
     "whitesur-gtk-theme": {
         "cargoLocks": null,

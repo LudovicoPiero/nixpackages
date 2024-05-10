@@ -29,49 +29,49 @@
   };
   vesktop = {
     pname = "vesktop";
-    version = "69f14ee61120ebc43e08cc94d209549a06bbd416";
+    version = "a8d72fa665df1077d299dfaf87faceedda2a0e84";
     src = fetchgit {
       url = "https://github.com/Vencord/Vesktop/";
-      rev = "69f14ee61120ebc43e08cc94d209549a06bbd416";
+      rev = "a8d72fa665df1077d299dfaf87faceedda2a0e84";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-9abFVUJ5nGCxno9qFMvvTkUIgRoka7aJBHNG7bCTJt0=";
+      sha256 = "sha256-sLxAPllWW1N/s144/J25iMraJZfzru5oxOkE7Q79NvM=";
     };
-    date = "2024-05-09";
+    date = "2024-05-10";
   };
   waybar = {
     pname = "waybar";
-    version = "2ead1bbf84ff0fdb7234b1d9332c3b3a3bb8b799";
+    version = "cb2d54a23797c2a04a1e50bd35e810ea9b1eb74a";
     src = fetchgit {
       url = "https://github.com/alexays/waybar";
-      rev = "2ead1bbf84ff0fdb7234b1d9332c3b3a3bb8b799";
+      rev = "cb2d54a23797c2a04a1e50bd35e810ea9b1eb74a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-PY6Vh9mOYjBC1wrWohIPw9eh1dDrDG9uBsZJjwRzGpI=";
+      sha256 = "sha256-PIVfZJ9L/tVZjo7HoVtnba2ol7VPMXLxO8oVMKPLYHE=";
     };
-    date = "2024-05-07";
+    date = "2024-05-10";
   };
   wezterm = {
     pname = "wezterm";
-    version = "4af418fddd0ed2d9a8861007112006fc657ecbac";
+    version = "ca27f921e2f5b25fa1a1b4395f972676d685b62c";
     src = fetchgit {
       url = "https://github.com/wez/wezterm";
-      rev = "4af418fddd0ed2d9a8861007112006fc657ecbac";
+      rev = "ca27f921e2f5b25fa1a1b4395f972676d685b62c";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-vSiLba4znif55hhdUoDvswDX+RlBVKH6ecG6hVIQ7Ps=";
+      sha256 = "sha256-J4L5+qtXsd8GMUS9SBSKl0HCQvxI1txUdGNfgeJCIno=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-4af418fddd0ed2d9a8861007112006fc657ecbac/Cargo.lock;
+      lockFile = ./wezterm-ca27f921e2f5b25fa1a1b4395f972676d685b62c/Cargo.lock;
       outputHashes = {
         "xcb-imdkit-0.3.0" = "sha256-fTpJ6uNhjmCWv7dZqVgYuS2Uic36XNYTbqlaly5QBjI=";
         "sqlite-cache-0.1.3" = "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=";
       };
     };
-    date = "2024-05-09";
+    date = "2024-05-10";
   };
   whitesur-gtk-theme = {
     pname = "whitesur-gtk-theme";

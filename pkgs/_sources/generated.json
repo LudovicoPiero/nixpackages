@@ -1,4 +1,23 @@
 {
+    "catppuccin-fcitx5": {
+        "cargoLocks": null,
+        "date": "2022-10-05",
+        "extract": null,
+        "name": "catppuccin-fcitx5",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "ce244cfdf43a648d984719fdfd1d60aab09f5c97",
+            "sha256": "sha256-uFaCbyrEjv4oiKUzLVFzw+UY54/h7wh2cntqeyYwGps=",
+            "type": "git",
+            "url": "https://github.com/catppuccin/fcitx5/"
+        },
+        "version": "ce244cfdf43a648d984719fdfd1d60aab09f5c97"
+    },
     "firefox-gnome-theme": {
         "cargoLocks": null,
         "date": "2024-05-02",

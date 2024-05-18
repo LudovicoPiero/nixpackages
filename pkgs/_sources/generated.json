@@ -58,7 +58,7 @@
     },
     "vesktop": {
         "cargoLocks": null,
-        "date": "2024-05-10",
+        "date": "2024-05-17",
         "extract": null,
         "name": "vesktop",
         "passthru": null,
@@ -68,16 +68,16 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "a8d72fa665df1077d299dfaf87faceedda2a0e84",
-            "sha256": "sha256-sLxAPllWW1N/s144/J25iMraJZfzru5oxOkE7Q79NvM=",
+            "rev": "463c42330e753002c3a6935c57bbdf4d5498e516",
+            "sha256": "sha256-oHn+MEBnsh7vJ/v4hj63SstiOfxlEIlBWy2QdbvFFPA=",
             "type": "git",
             "url": "https://github.com/Vencord/Vesktop/"
         },
-        "version": "a8d72fa665df1077d299dfaf87faceedda2a0e84"
+        "version": "463c42330e753002c3a6935c57bbdf4d5498e516"
     },
     "waybar": {
         "cargoLocks": null,
-        "date": "2024-05-14",
+        "date": "2024-05-18",
         "extract": null,
         "name": "waybar",
         "passthru": null,
@@ -87,24 +87,24 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "912d0e83f36bce702fdef848a74247093b9f33e7",
-            "sha256": "sha256-i+PETwG/8ra7wer6yqwCxg5+yK24/HW8ddu/EwzLMnc=",
+            "rev": "8ad7c75d79f76c27a9c6b87460b79d1787c8855b",
+            "sha256": "sha256-ND9F+BJeyKaGZFu94SWIj6HtyZTzWf5qVyp3cI3a7Is=",
             "type": "git",
             "url": "https://github.com/alexays/waybar"
         },
-        "version": "912d0e83f36bce702fdef848a74247093b9f33e7"
+        "version": "8ad7c75d79f76c27a9c6b87460b79d1787c8855b"
     },
     "wezterm": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wezterm-332b9b8b687a8d21e968b5a294e2b675dd833974/Cargo.lock",
+                "./wezterm-396c8d9a886d06c4f839a24d3942f8612b6b84d0/Cargo.lock",
                 {
                     "sqlite-cache-0.1.3": "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=",
                     "xcb-imdkit-0.3.0": "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo="
                 }
             ]
         },
-        "date": "2024-05-15",
+        "date": "2024-05-17",
         "extract": null,
         "name": "wezterm",
         "passthru": null,
@@ -114,16 +114,16 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "332b9b8b687a8d21e968b5a294e2b675dd833974",
-            "sha256": "sha256-ttHbT39u7MCbLKu+fiuaMMfJGA0aXmK8mMqJ3xA/7vc=",
+            "rev": "396c8d9a886d06c4f839a24d3942f8612b6b84d0",
+            "sha256": "sha256-NCM9IU1aqgMtmazrjDVlhOk6eS718cZnMI4/CE3oA7U=",
             "type": "git",
             "url": "https://github.com/wez/wezterm"
         },
-        "version": "332b9b8b687a8d21e968b5a294e2b675dd833974"
+        "version": "396c8d9a886d06c4f839a24d3942f8612b6b84d0"
     },
     "whitesur-gtk-theme": {
         "cargoLocks": null,
-        "date": "2024-05-13",
+        "date": "2024-05-18",
         "extract": null,
         "name": "whitesur-gtk-theme",
         "passthru": null,
@@ -133,11 +133,11 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "d6059585d2f4f218270494f14662d845b11f75f7",
-            "sha256": "sha256-eTNh4NYTkHlfLzPam/FtOrHY+oo8fklNmZ0JQCKRZ9Y=",
+            "rev": "d84b269e76db3f65fa6485fbedd5223715654bc9",
+            "sha256": "sha256-HlSD4LxJO+5sdakXRxFKPWfay1ABzm8t+Ea8/zsq3FQ=",
             "type": "git",
             "url": "https://github.com/vinceliuice/WhiteSur-gtk-theme"
         },
-        "version": "d6059585d2f4f218270494f14662d845b11f75f7"
+        "version": "d84b269e76db3f65fa6485fbedd5223715654bc9"
     }
 }

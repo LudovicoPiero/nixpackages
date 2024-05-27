@@ -16,16 +16,16 @@
   };
   firefox-gnome-theme = {
     pname = "firefox-gnome-theme";
-    version = "1efffcaa78904816f70dd493627412d299b23a52";
+    version = "8171c0578feb835ce66d49edba7429f46b7ac3f6";
     src = fetchgit {
       url = "https://github.com/rafaelmardojai/firefox-gnome-theme";
-      rev = "1efffcaa78904816f70dd493627412d299b23a52";
+      rev = "8171c0578feb835ce66d49edba7429f46b7ac3f6";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-JouEEHCgFk9WMAi1VFqNP+Ow5I5NFD+B2+3E6BG1Y3c=";
+      sha256 = "sha256-8fabA8OY1n2OcJFbbE03+bMydVANSBrNGo8hkzhXxxU=";
     };
-    date = "2024-05-16";
+    date = "2024-05-27";
   };
   san-francisco-pro = {
     pname = "san-francisco-pro";
@@ -55,16 +55,16 @@
   };
   waybar = {
     pname = "waybar";
-    version = "63bb338343cad3337726739704b75d1b0b13a8a5";
+    version = "ac2fa9870f82554898ff4c6b46adc48d4048169b";
     src = fetchgit {
       url = "https://github.com/alexays/waybar";
-      rev = "63bb338343cad3337726739704b75d1b0b13a8a5";
+      rev = "ac2fa9870f82554898ff4c6b46adc48d4048169b";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-5+c0w1KegSmT4W2AzsW433YmmBm+SlNHlpcaXWVcg08=";
+      sha256 = "sha256-qc3je8kpU7AYI2KBFR+hpyQNzHgq1DCaY8XQO8jpR5k=";
     };
-    date = "2024-05-24";
+    date = "2024-05-27";
   };
   wezterm = {
     pname = "wezterm";

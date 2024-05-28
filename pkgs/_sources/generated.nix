@@ -42,29 +42,29 @@
   };
   vesktop = {
     pname = "vesktop";
-    version = "6b948668b9a700aa86ef7c5843d8ab10b668ebf6";
+    version = "b6c3c8024b60d8d8e0f76457ceee941613c1329c";
     src = fetchgit {
       url = "https://github.com/Vencord/Vesktop/";
-      rev = "6b948668b9a700aa86ef7c5843d8ab10b668ebf6";
+      rev = "b6c3c8024b60d8d8e0f76457ceee941613c1329c";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-+u0TlGxLILqYj78S0VnIVVvehKafQBa4MiAvdazaBYY=";
+      sha256 = "sha256-db76MgnRLtghENKni6mKDC8EGbXKlCMAkx3rU9VaGvM=";
     };
-    date = "2024-05-23";
+    date = "2024-05-28";
   };
   waybar = {
     pname = "waybar";
-    version = "ac2fa9870f82554898ff4c6b46adc48d4048169b";
+    version = "0d518cb5a30756a0fd6927d1b90db768e9425a7d";
     src = fetchgit {
       url = "https://github.com/alexays/waybar";
-      rev = "ac2fa9870f82554898ff4c6b46adc48d4048169b";
+      rev = "0d518cb5a30756a0fd6927d1b90db768e9425a7d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-qc3je8kpU7AYI2KBFR+hpyQNzHgq1DCaY8XQO8jpR5k=";
+      sha256 = "sha256-RA8/JeKVEuAmFRjxZX2yH4d2WYouSKCtUNvxgSJtMK4=";
     };
-    date = "2024-05-27";
+    date = "2024-05-28";
   };
   wezterm = {
     pname = "wezterm";

@@ -42,16 +42,16 @@
   };
   vesktop = {
     pname = "vesktop";
-    version = "3772db9eeac82b38871031fb6c179a0fdaeffca6";
+    version = "7fe79b629ead44e6d781378d8c59db04dd73ceb8";
     src = fetchgit {
       url = "https://github.com/Vencord/Vesktop/";
-      rev = "3772db9eeac82b38871031fb6c179a0fdaeffca6";
+      rev = "7fe79b629ead44e6d781378d8c59db04dd73ceb8";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-IzwrYFlXMnSWDjNFMItct/MTXVev/DtNx/7rZP/+sRo=";
+      sha256 = "sha256-QU6mY6S5aqs/nbd9Nu1VKlSauEVvmAsSzlwx5MDEzHQ=";
     };
-    date = "2024-05-29";
+    date = "2024-06-01";
   };
   waybar = {
     pname = "waybar";
@@ -88,15 +88,15 @@
   };
   whitesur-gtk-theme = {
     pname = "whitesur-gtk-theme";
-    version = "cc39a8d37ae2b5ee43243cab7827c300af3ae902";
+    version = "974cc79a1738516b6914144ca4210654d2f5dc51";
     src = fetchgit {
       url = "https://github.com/vinceliuice/WhiteSur-gtk-theme";
-      rev = "cc39a8d37ae2b5ee43243cab7827c300af3ae902";
+      rev = "974cc79a1738516b6914144ca4210654d2f5dc51";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-NmwgYxxkd4Lc6oMyoK1D56kZXFiFWvX73FEMyeSB9DQ=";
+      sha256 = "sha256-VcwijjvB6qfjS/SsbstpcY5o1NMbdhR1xQm9DNpHzzM=";
     };
-    date = "2024-05-20";
+    date = "2024-06-02";
   };
 }

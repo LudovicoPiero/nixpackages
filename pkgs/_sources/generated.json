@@ -58,7 +58,7 @@
     },
     "vesktop": {
         "cargoLocks": null,
-        "date": "2024-05-29",
+        "date": "2024-06-01",
         "extract": null,
         "name": "vesktop",
         "passthru": null,
@@ -68,12 +68,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "3772db9eeac82b38871031fb6c179a0fdaeffca6",
-            "sha256": "sha256-IzwrYFlXMnSWDjNFMItct/MTXVev/DtNx/7rZP/+sRo=",
+            "rev": "7fe79b629ead44e6d781378d8c59db04dd73ceb8",
+            "sha256": "sha256-QU6mY6S5aqs/nbd9Nu1VKlSauEVvmAsSzlwx5MDEzHQ=",
             "type": "git",
             "url": "https://github.com/Vencord/Vesktop/"
         },
-        "version": "3772db9eeac82b38871031fb6c179a0fdaeffca6"
+        "version": "7fe79b629ead44e6d781378d8c59db04dd73ceb8"
     },
     "waybar": {
         "cargoLocks": null,
@@ -123,7 +123,7 @@
     },
     "whitesur-gtk-theme": {
         "cargoLocks": null,
-        "date": "2024-05-20",
+        "date": "2024-06-02",
         "extract": null,
         "name": "whitesur-gtk-theme",
         "passthru": null,
@@ -133,11 +133,11 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "cc39a8d37ae2b5ee43243cab7827c300af3ae902",
-            "sha256": "sha256-NmwgYxxkd4Lc6oMyoK1D56kZXFiFWvX73FEMyeSB9DQ=",
+            "rev": "974cc79a1738516b6914144ca4210654d2f5dc51",
+            "sha256": "sha256-VcwijjvB6qfjS/SsbstpcY5o1NMbdhR1xQm9DNpHzzM=",
             "type": "git",
             "url": "https://github.com/vinceliuice/WhiteSur-gtk-theme"
         },
-        "version": "cc39a8d37ae2b5ee43243cab7827c300af3ae902"
+        "version": "974cc79a1738516b6914144ca4210654d2f5dc51"
     }
 }

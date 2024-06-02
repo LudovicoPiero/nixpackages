@@ -1,9 +1,9 @@
-name: "Daily Bump"
+name: "Weekly Bump"
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 20 * * *" # At 20:00 everyday.
+    - cron: "0 20 * * 0" # At 20:00 on Sunday.
 
 jobs:
   nvfetcher-update:
@@ -41,7 +41,7 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: "${{ secrets.PR_TOKEN }}"
-          title: "Daily Bump"
+          title: "Weekly Bump"
           body: "BOOMP BOOMP"
           labels: automated,uwu, keep-up-to-date
           branch: "nvfetcher-update"
@@ -83,7 +83,7 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: "${{ secrets.PR_TOKEN }}"
-          title: "Daily Bump"
+          title: "Weekly Bump"
           body: "BOOMP BOOMP"
           labels: automated,uwu, keep-up-to-date
           branch: "nix-update"

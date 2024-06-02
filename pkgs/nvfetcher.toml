@@ -20,10 +20,6 @@ fetch.git = "https://github.com/rafaelmardojai/firefox-gnome-theme"
 src.git = "https://github.com/vinceliuice/WhiteSur-gtk-theme"
 fetch.git = "https://github.com/vinceliuice/WhiteSur-gtk-theme"
 
-[vesktop]
-src.git = "https://github.com/Vencord/Vesktop/"
-fetch.git = "https://github.com/Vencord/Vesktop/"
-
 [catppuccin-fcitx5]
 src.git = "https://github.com/catppuccin/fcitx5/"
 fetch.git = "https://github.com/catppuccin/fcitx5/"

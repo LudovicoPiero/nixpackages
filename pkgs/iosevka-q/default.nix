@@ -194,7 +194,11 @@ buildNpmPackage rec {
 
     # Patch the font with nerd-font-patcher
     cd "dist/$pname/TTF"
-    find . -type f -name "*.ttf" | xargs -P $NIX_BUILD_CORES -I {} nerd-font-patcher -c -s {}
+    find . -type f -name "*.ttf" | xargs -P $NIX_BUILD_CORES -I {} nerd-font-patcher \
+    	--complete \
+    	--mono \
+    	--no-progressbars \
+    	--careful {}
     cd ../../../
 
     runHook postBuild

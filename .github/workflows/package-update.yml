@@ -3,7 +3,7 @@ name: "Daily Bump"
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 17 * * 0" # 02:00 JST
+    - cron: "0 15 * * 0" # 00:00 JST
 
 jobs:
   nvfetcher-update:

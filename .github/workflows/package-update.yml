@@ -3,7 +3,7 @@ name: "Daily Bump"
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 20 * * *" # At 20:00 everyday.
+    - cron: "0 17 * * 0" # 02:00 JST
 
 jobs:
   nvfetcher-update:
@@ -46,7 +46,6 @@ jobs:
           labels: automated,uwu, keep-up-to-date
           branch: "nvfetcher-update"
           delete-branch: true
-
 
   nix-update:
     if: github.repository == 'ludovicopiero/nixpackages' # Don't do this in forks

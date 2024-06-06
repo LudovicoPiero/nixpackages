@@ -6,7 +6,6 @@
   darwin,
   remarshal,
   ttfautohint-nox,
-  nerd-font-patcher,
   privateBuildPlan ? ''
     [buildPlans.IosevkaQ]
     family = "Iosevka q"
@@ -142,7 +141,6 @@ buildNpmPackage rec {
     [
       remarshal
       ttfautohint-nox
-      nerd-font-patcher
     ]
     ++ lib.optionals stdenv.isDarwin [
       # libtool
@@ -189,18 +187,7 @@ buildNpmPackage rec {
   buildPhase = ''
     export HOME=$TMPDIR
     runHook preBuild
-
     npm run build --no-update-notifier --targets ttf::$pname -- --jCmd=$NIX_BUILD_CORES --verbose=9 ttf::$pname
-
-    # Patch the font with nerd-font-patcher
-    cd "dist/$pname/TTF"
-    find . -type f -name "*.ttf" | xargs -P $NIX_BUILD_CORES -I {} nerd-font-patcher \
-    	--complete \
-    	--mono \
-    	--no-progressbars \
-    	--careful {}
-    cd ../../../
-
     runHook postBuild
   '';
 

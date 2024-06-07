@@ -1,4 +1,23 @@
 {
+    "cascade-firefox-theme": {
+        "cargoLocks": null,
+        "date": "2024-02-12",
+        "extract": null,
+        "name": "cascade-firefox-theme",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "8fbe98934fa58f934f7ed5253367396519b320a4",
+            "sha256": "sha256-GMXSpNaShNu/Bce6TTnlgzGHV8MhHRVICv8hJqMi70w=",
+            "type": "git",
+            "url": "https://github.com/cascadefox/cascade"
+        },
+        "version": "8fbe98934fa58f934f7ed5253367396519b320a4"
+    },
     "catppuccin-fcitx5": {
         "cargoLocks": null,
         "date": "2022-10-05",
@@ -14,13 +33,13 @@
             "rev": "ce244cfdf43a648d984719fdfd1d60aab09f5c97",
             "sha256": "sha256-uFaCbyrEjv4oiKUzLVFzw+UY54/h7wh2cntqeyYwGps=",
             "type": "git",
-            "url": "https://github.com/catppuccin/fcitx5/"
+            "url": "https://github.com/catppuccin/fcitx5"
         },
         "version": "ce244cfdf43a648d984719fdfd1d60aab09f5c97"
     },
     "firefox-gnome-theme": {
         "cargoLocks": null,
-        "date": "2024-05-27",
+        "date": "2024-06-05",
         "extract": null,
         "name": "firefox-gnome-theme",
         "passthru": null,
@@ -30,12 +49,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "8171c0578feb835ce66d49edba7429f46b7ac3f6",
-            "sha256": "sha256-8fabA8OY1n2OcJFbbE03+bMydVANSBrNGo8hkzhXxxU=",
+            "rev": "bec5a54900e92fb8d4ce6064eab6a1dce517a06b",
+            "sha256": "sha256-xtrHrY2H23jlqOPY/fp0n13vaQkJl4bBAZHQ6T7lVMU=",
             "type": "git",
             "url": "https://github.com/rafaelmardojai/firefox-gnome-theme"
         },
-        "version": "8171c0578feb835ce66d49edba7429f46b7ac3f6"
+        "version": "bec5a54900e92fb8d4ce6064eab6a1dce517a06b"
     },
     "san-francisco-pro": {
         "cargoLocks": null,
@@ -58,7 +77,7 @@
     },
     "waybar": {
         "cargoLocks": null,
-        "date": "2024-05-31",
+        "date": "2024-06-05",
         "extract": null,
         "name": "waybar",
         "passthru": null,
@@ -68,12 +87,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "7163752aa07f145e5951e2388b7693e19fc5d446",
-            "sha256": "sha256-lSb3GoBbXh8nAb6ICA/Nf3Y2rTJ+0HfxKyC9KxAx38I=",
+            "rev": "365e77af58264e717d946d9d7701b82b54585db2",
+            "sha256": "sha256-VswaF+HMGpT5S/0QWrSSquj9TWCYkZ5mTtoazcgBUTA=",
             "type": "git",
             "url": "https://github.com/alexays/waybar"
         },
-        "version": "7163752aa07f145e5951e2388b7693e19fc5d446"
+        "version": "365e77af58264e717d946d9d7701b82b54585db2"
     },
     "wezterm": {
         "cargoLocks": {

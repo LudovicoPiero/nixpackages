@@ -13,6 +13,7 @@
             "name": null,
             "rev": "8fbe98934fa58f934f7ed5253367396519b320a4",
             "sha256": "sha256-GMXSpNaShNu/Bce6TTnlgzGHV8MhHRVICv8hJqMi70w=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/cascadefox/cascade"
         },
@@ -32,6 +33,7 @@
             "name": null,
             "rev": "ce244cfdf43a648d984719fdfd1d60aab09f5c97",
             "sha256": "sha256-uFaCbyrEjv4oiKUzLVFzw+UY54/h7wh2cntqeyYwGps=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/catppuccin/fcitx5"
         },
@@ -39,7 +41,7 @@
     },
     "firefox-gnome-theme": {
         "cargoLocks": null,
-        "date": "2024-06-05",
+        "date": "2024-06-14",
         "extract": null,
         "name": "firefox-gnome-theme",
         "passthru": null,
@@ -49,12 +51,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "bec5a54900e92fb8d4ce6064eab6a1dce517a06b",
-            "sha256": "sha256-xtrHrY2H23jlqOPY/fp0n13vaQkJl4bBAZHQ6T7lVMU=",
+            "rev": "73ab9e317a33cd2f25b39ed8154aaea72816e275",
+            "sha256": "sha256-aaWVGLtBbPt8CkRpPQ2mIhzAQZw17WL0B8MkjwSUAN4=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/rafaelmardojai/firefox-gnome-theme"
         },
-        "version": "bec5a54900e92fb8d4ce6064eab6a1dce517a06b"
+        "version": "73ab9e317a33cd2f25b39ed8154aaea72816e275"
     },
     "san-francisco-pro": {
         "cargoLocks": null,
@@ -70,6 +73,7 @@
             "name": null,
             "rev": "8bfea09aa6f1139479f80358b2e1e5c6dc991a58",
             "sha256": "sha256-mAXExj8n8gFHq19HfGy4UOJYKVGPYgarGd/04kUIqX4=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts"
         },
@@ -77,7 +81,7 @@
     },
     "waybar": {
         "cargoLocks": null,
-        "date": "2024-06-07",
+        "date": "2024-06-14",
         "extract": null,
         "name": "waybar",
         "passthru": null,
@@ -87,24 +91,25 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "f4da2039159ac466d42182f8335c860f5b223b54",
-            "sha256": "sha256-M/D1bF9H9bH+RYRlF4zW6LWX7yB8ckJ8ieRLsrTttqA=",
+            "rev": "9ba5825009aefc4e85d0d0c5f7f70b3063723d1a",
+            "sha256": "sha256-3n55UIeXb9mq7PBIG0WL0T6954id/w7XZTGPit6RS0Y=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/alexays/waybar"
         },
-        "version": "f4da2039159ac466d42182f8335c860f5b223b54"
+        "version": "9ba5825009aefc4e85d0d0c5f7f70b3063723d1a"
     },
     "wezterm": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wezterm-11124f0cfed5835d3ca13dcdfcaad9cb74336fc8/Cargo.lock",
+                "./wezterm-794389ceacdd19dbf6255d153f88d539bd504e4b/Cargo.lock",
                 {
                     "sqlite-cache-0.1.3": "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=",
                     "xcb-imdkit-0.3.0": "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo="
                 }
             ]
         },
-        "date": "2024-06-08",
+        "date": "2024-06-15",
         "extract": null,
         "name": "wezterm",
         "passthru": null,
@@ -114,12 +119,13 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "11124f0cfed5835d3ca13dcdfcaad9cb74336fc8",
-            "sha256": "sha256-gHIonx1TvrRjUSseiEihFZ6Tf8HrSYMddoo+Zae7Wi4=",
+            "rev": "794389ceacdd19dbf6255d153f88d539bd504e4b",
+            "sha256": "sha256-vs0t+j8DMmf10XIKdPXeebFkk2L411tVeA4HLbAIN7Q=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/wez/wezterm"
         },
-        "version": "11124f0cfed5835d3ca13dcdfcaad9cb74336fc8"
+        "version": "794389ceacdd19dbf6255d153f88d539bd504e4b"
     },
     "whitesur-gtk-theme": {
         "cargoLocks": null,
@@ -135,6 +141,7 @@
             "name": null,
             "rev": "974cc79a1738516b6914144ca4210654d2f5dc51",
             "sha256": "sha256-VcwijjvB6qfjS/SsbstpcY5o1NMbdhR1xQm9DNpHzzM=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/vinceliuice/WhiteSur-gtk-theme"
         },

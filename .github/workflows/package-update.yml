@@ -1,4 +1,4 @@
-name: "Daily Bump"
+name: "Package Update"
 
 on:
   workflow_dispatch:
@@ -41,7 +41,7 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: "${{ secrets.PR_TOKEN }}"
-          title: "Daily Bump"
+          title: "Package Update"
           body: "BOOMP BOOMP"
           labels: automated,uwu, keep-up-to-date
           branch: "nvfetcher-update"
@@ -82,7 +82,7 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: "${{ secrets.PR_TOKEN }}"
-          title: "Daily Bump"
+          title: "Package Update"
           body: "BOOMP BOOMP"
           labels: automated,uwu, keep-up-to-date
           branch: "nix-update"

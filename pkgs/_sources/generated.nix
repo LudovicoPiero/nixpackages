@@ -10,7 +10,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-GMXSpNaShNu/Bce6TTnlgzGHV8MhHRVICv8hJqMi70w=";
     };
     date = "2024-02-12";
@@ -24,7 +23,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-uFaCbyrEjv4oiKUzLVFzw+UY54/h7wh2cntqeyYwGps=";
     };
     date = "2022-10-05";
@@ -38,7 +36,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-3DE/UnxJxRWjtWPZuuiT3TIG7HrHf+srpmiCTFkrAQs=";
     };
     date = "2024-06-30";
@@ -52,7 +49,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-mAXExj8n8gFHq19HfGy4UOJYKVGPYgarGd/04kUIqX4=";
     };
     date = "2021-06-22";
@@ -66,31 +62,9 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-SXkcbM1+rtmlRP19I3XPGauqUHCZ2RVJZ92lJ4VfFcI=";
     };
     date = "2024-06-28";
-  };
-  wezterm = {
-    pname = "wezterm";
-    version = "552bb1d66b6d0102961974c0da22dc7c69b0cd30";
-    src = fetchgit {
-      url = "https://github.com/wez/wezterm";
-      rev = "552bb1d66b6d0102961974c0da22dc7c69b0cd30";
-      fetchSubmodules = true;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ ];
-      sha256 = "sha256-dr/f/zEqgzJ26s2KkiX6/68IU986jAYpeerRMSqejjM=";
-    };
-    cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-552bb1d66b6d0102961974c0da22dc7c69b0cd30/Cargo.lock;
-      outputHashes = {
-        "xcb-imdkit-0.3.0" = "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo=";
-        "sqlite-cache-0.1.3" = "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=";
-      };
-    };
-    date = "2024-06-24";
   };
   whitesur-gtk-theme = {
     pname = "whitesur-gtk-theme";
@@ -101,7 +75,6 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-L3prygtR9rzpQ3dO158690QJoA7A6r/irqWeQWiSJ1s=";
     };
     date = "2024-06-21";

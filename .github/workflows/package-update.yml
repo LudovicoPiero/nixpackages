@@ -32,6 +32,7 @@ jobs:
       - name: Run nvfetcher
         run: |
           pushd pkgs
+          rm -r _sources/wezterm-*
           nix run github:berberman/nvfetcher -- --commit-changes
           popd
 

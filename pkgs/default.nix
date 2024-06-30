@@ -24,6 +24,17 @@
 
         waybar = pkgs.callPackage ./waybar { inherit sources; };
 
+        wezterm = pkgs.darwin.apple_sdk_11_0.callPackage ./wezterm {
+          inherit (pkgs.darwin.apple_sdk_11_0.frameworks)
+            Cocoa
+            CoreGraphics
+            Foundation
+            UserNotifications
+            System
+            ;
+          inherit sources;
+        };
+
         whitesur-gtk-theme = pkgs.callPackage ./whitesur-gtk-theme {
           inherit (pkgs.gnome) gnome-shell;
           inherit sources;

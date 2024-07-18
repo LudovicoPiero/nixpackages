@@ -19,10 +19,6 @@ jobs:
 
       - name: Install nix
         uses: cachix/install-nix-action@V27
-        with:
-          nix_path: nixpkgs=channel:nixos-unstable
-          extra_nix_config: |
-            experimental-features = nix-command flakes
 
       - name: Git config
         run: |

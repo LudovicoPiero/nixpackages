@@ -1,0 +1,150 @@
+{
+    "cascade-firefox-theme": {
+        "cargoLocks": null,
+        "date": "2024-02-12",
+        "extract": null,
+        "name": "cascade-firefox-theme",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "8fbe98934fa58f934f7ed5253367396519b320a4",
+            "sha256": "sha256-GMXSpNaShNu/Bce6TTnlgzGHV8MhHRVICv8hJqMi70w=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/cascadefox/cascade"
+        },
+        "version": "8fbe98934fa58f934f7ed5253367396519b320a4"
+    },
+    "catppuccin-fcitx5": {
+        "cargoLocks": null,
+        "date": "2022-10-05",
+        "extract": null,
+        "name": "catppuccin-fcitx5",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "ce244cfdf43a648d984719fdfd1d60aab09f5c97",
+            "sha256": "sha256-uFaCbyrEjv4oiKUzLVFzw+UY54/h7wh2cntqeyYwGps=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/catppuccin/fcitx5"
+        },
+        "version": "ce244cfdf43a648d984719fdfd1d60aab09f5c97"
+    },
+    "firefox-gnome-theme": {
+        "cargoLocks": null,
+        "date": "2024-07-17",
+        "extract": null,
+        "name": "firefox-gnome-theme",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "cc70ec20e2775df7cd2bccdd20dcdecc3e0a733b",
+            "sha256": "sha256-HJKuwVvi+yGv+8n9Ez4EwaJA0B79JRss9J30vpgy/GI=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/rafaelmardojai/firefox-gnome-theme"
+        },
+        "version": "cc70ec20e2775df7cd2bccdd20dcdecc3e0a733b"
+    },
+    "san-francisco-pro": {
+        "cargoLocks": null,
+        "date": "2021-06-22",
+        "extract": null,
+        "name": "san-francisco-pro",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "8bfea09aa6f1139479f80358b2e1e5c6dc991a58",
+            "sha256": "sha256-mAXExj8n8gFHq19HfGy4UOJYKVGPYgarGd/04kUIqX4=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts"
+        },
+        "version": "8bfea09aa6f1139479f80358b2e1e5c6dc991a58"
+    },
+    "waybar": {
+        "cargoLocks": null,
+        "date": "2024-07-17",
+        "extract": null,
+        "name": "waybar",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "15e1547661bfc5fe9b3d45bb0d9cea11cf07db7f",
+            "sha256": "sha256-/JW3WnRLpfz8j+9Zc9YkK63i8DjHrKwv9PWKIMz3MVI=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/alexays/waybar"
+        },
+        "version": "15e1547661bfc5fe9b3d45bb0d9cea11cf07db7f"
+    },
+    "wezterm": {
+        "cargoLocks": {
+            "Cargo.lock": [
+                "./wezterm-c9116830c27baf0c547a1524d33363fd5e42295a/Cargo.lock",
+                {
+                    "sqlite-cache-0.1.3": "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=",
+                    "xcb-imdkit-0.3.0": "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo="
+                }
+            ]
+        },
+        "date": "2024-07-15",
+        "extract": null,
+        "name": "wezterm",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "c9116830c27baf0c547a1524d33363fd5e42295a",
+            "sha256": "sha256-TUQVcrR9QUBWkhxoKz23a12ZvAPcG3PcNGZRC4q9kNc=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/wez/wezterm"
+        },
+        "version": "c9116830c27baf0c547a1524d33363fd5e42295a"
+    },
+    "whitesur-gtk-theme": {
+        "cargoLocks": null,
+        "date": "2024-07-18",
+        "extract": null,
+        "name": "whitesur-gtk-theme",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "e3345227c06ad83acd1d19681b3603806e62fdb8",
+            "sha256": "sha256-6bxV8UR03JsSesuSDjRe/b8L0327jOGpMPdMY4f1A1M=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/vinceliuice/WhiteSur-gtk-theme"
+        },
+        "version": "e3345227c06ad83acd1d19681b3603806e62fdb8"
+    }
+}

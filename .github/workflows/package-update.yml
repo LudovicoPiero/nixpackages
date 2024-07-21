@@ -18,7 +18,9 @@ jobs:
           token: "${{ secrets.PR_TOKEN }}"
 
       - name: Install nix
-        uses: cachix/install-nix-action@V27
+        uses: cachix/install-nix-action@v27
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
 
       - name: Git config
         run: |

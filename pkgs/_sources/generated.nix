@@ -59,51 +59,51 @@
   };
   waybar = {
     pname = "waybar";
-    version = "cece04e02f68c54489b4b2405937d06c7aa19ef3";
+    version = "003dd3a9a260a212648b6ab4a70f058c6437d40d";
     src = fetchgit {
       url = "https://github.com/alexays/waybar";
-      rev = "cece04e02f68c54489b4b2405937d06c7aa19ef3";
+      rev = "003dd3a9a260a212648b6ab4a70f058c6437d40d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-bmK7xt2m5CrMhqy/nGibMBqy8uxAfuwcC58lFArgg84=";
+      sha256 = "sha256-BwBRNmGv2nX1nEhitOKyoOvmk+G6WoBaBHAlKYy5Edg=";
     };
-    date = "2024-07-21";
+    date = "2024-07-22";
   };
   wezterm = {
     pname = "wezterm";
-    version = "574e0221fa214106352a9f03f0257e9dec9f6176";
+    version = "7e8fdc118d2d7ceb51c720a966090f6cb65089b7";
     src = fetchgit {
       url = "https://github.com/wez/wezterm";
-      rev = "574e0221fa214106352a9f03f0257e9dec9f6176";
+      rev = "7e8fdc118d2d7ceb51c720a966090f6cb65089b7";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-5NxBHyBsv3KpDkZuOpPDoZPTsgIejtoxzkMTQ4FxUJg=";
+      sha256 = "sha256-8j7044lN0w/uVQOvqq/GlDGATmI3zAk/GTndJEyb3Ws=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-574e0221fa214106352a9f03f0257e9dec9f6176/Cargo.lock;
+      lockFile = ./wezterm-7e8fdc118d2d7ceb51c720a966090f6cb65089b7/Cargo.lock;
       outputHashes = {
         "xcb-imdkit-0.3.0" = "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo=";
         "sqlite-cache-0.1.3" = "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=";
       };
     };
-    date = "2024-07-21";
+    date = "2024-07-22";
   };
   whitesur-gtk-theme = {
     pname = "whitesur-gtk-theme";
-    version = "e3345227c06ad83acd1d19681b3603806e62fdb8";
+    version = "dcfa6c3cb47b6a6a1c54427190c90d06d632b064";
     src = fetchgit {
       url = "https://github.com/vinceliuice/WhiteSur-gtk-theme";
-      rev = "e3345227c06ad83acd1d19681b3603806e62fdb8";
+      rev = "dcfa6c3cb47b6a6a1c54427190c90d06d632b064";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-6bxV8UR03JsSesuSDjRe/b8L0327jOGpMPdMY4f1A1M=";
+      sha256 = "sha256-98E5+CJavnHwDu4gJt1b9IzHXdTvslE9UfjjzUZmxrI=";
     };
-    date = "2024-07-18";
+    date = "2024-07-25";
   };
 }

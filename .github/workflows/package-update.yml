@@ -3,7 +3,7 @@ name: "Package Update"
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 15 * * 0" # 00:00 JST
+    - cron: "0 17 * * *"
 
 jobs:
   nvfetcher-update:

@@ -6,47 +6,25 @@ on:
     - cron: "0 17 * * *"
 
 jobs:
-  get-flakes:
-    if: github.repository == 'ludovicopiero/nixpackages' # Don't do this in forks
+  update-flake-lock:
     runs-on: ubuntu-latest
-    outputs:
-      matrix: ${{ steps.get-flakes.outputs.matrix }}
     steps:
-      - uses: actions/checkout@v4.1.1
-      - uses: DeterminateSystems/nix-installer-action@v13
-      - name: generate flake matrix
-        id: get-flakes
-        run: |
-          set -euo pipefail
-          flakes="$(nix flake metadata --json | jq -rcM '.locks.nodes.root.inputs | {flake: keys}')"
-          echo "matrix=$flakes" >> "$GITHUB_OUTPUT"
-
-  update-flake:
-    if: github.repository == 'ludovicopiero/nixpackages' # Don't do this in forks
-    name: update-${{ matrix.flake }}
-    runs-on: ubuntu-latest
-    needs: get-flakes
-    strategy:
-      fail-fast: false
-      matrix: ${{ fromJson(needs.get-flakes.outputs.matrix) }}
-    steps:
-      - uses: actions/checkout@v4.1.1
-
+      - name: Checkout repository
+        uses: actions/checkout@v4.1.3
+      - run: git config --global user.email "maximiliansforza@proton.me"
+      - run: git config --global user.name "Maximilian Sforza"
       - name: Install Nix
-        uses: cachix/install-nix-action@V27
+        uses: DeterminateSystems/nix-installer-action@main
+      - name: Update flake.lock
+        uses: DeterminateSystems/update-flake-lock@main
         with:
-          nix_path: nixpkgs=channel:nixos-unstable-small
-
-      - run: git config --global user.email "59017537+MaximilianSforza@users.noreply.github.com"
-      - run: git config --global user.name "Maximilian"
-      - uses: cpcloud/flake-update-action@main
-        with:
-          dependency: ${{ matrix.flake }}
-          pull-request-token: ${{ secrets.PR_TOKEN }}
-          pull-request-author: Maximilian <59017537+MaximilianSforza@users.noreply.github.com>
-          github-token: ${{ secrets.PR_TOKEN }}
-          pull-request-labels: automated,uwu, keep-up-to-date
-          delete-branch: true
-          pull-request-branch-prefix: "flake/update-"
-          pull-request-merge-method: "merge"
-          automerge: false
+          git-author-name: "Maximilian Sforza"
+          git-author-email: "maximiliansforza@proton.me"
+          git-committer-name: "Maximilian Sforza"
+          git-committer-email: "maximiliansforza@proton.me"
+          token: ${{ secrets.PR_TOKEN }}
+          commit-msg: "chore: Update flake.lock" # The message provided with the commit
+          pr-title: "Update flake.lock" # Title of PR to be created
+          pr-labels: | # Labels to be set on the PR
+            automated
+            keep-up-to-date

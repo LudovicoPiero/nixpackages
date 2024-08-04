@@ -126,16 +126,16 @@ assert (privateBuildPlan != null) -> set != null;
 assert (extraParameters != null) -> set != null;
 buildNpmPackage rec {
   pname = if set != null then "Iosevka${set}" else "Iosevka";
-  version = "31.0.0";
+  version = "31.1.0";
 
   src = fetchFromGitHub {
     owner = "be5invis";
     repo = "iosevka";
     rev = "v${version}";
-    hash = "sha256-toC3Q5DkTu8yfrCwhRutUaPW0JJO/Vnhkh6PUKIa31I=";
+    hash = "sha256-4u6/OOrDz3uQc5SQ0TOeBpLZy0hhKZ+PoUS3hzhcuko=";
   };
 
-  npmDepsHash = "sha256-PWzhpz+L1mNQI5PCHVsU/+vfb5im/V8NxhlUtdhSeMM=";
+  npmDepsHash = "sha256-6Yfy7qiKPBKJPSutDSosP2ImJW3KPN7RE+CYvUDSDgM=";
 
   nativeBuildInputs =
     [

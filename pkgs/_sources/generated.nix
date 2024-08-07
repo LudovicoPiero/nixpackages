@@ -31,17 +31,17 @@
   };
   firefox-gnome-theme = {
     pname = "firefox-gnome-theme";
-    version = "cc70ec20e2775df7cd2bccdd20dcdecc3e0a733b";
+    version = "3690ce89ab496df771dd3a470908da71e46271a6";
     src = fetchgit {
       url = "https://github.com/rafaelmardojai/firefox-gnome-theme";
-      rev = "cc70ec20e2775df7cd2bccdd20dcdecc3e0a733b";
+      rev = "3690ce89ab496df771dd3a470908da71e46271a6";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-HJKuwVvi+yGv+8n9Ez4EwaJA0B79JRss9J30vpgy/GI=";
+      sha256 = "sha256-eo/6z6noWv0xgSsvf007MqT+ADz8WtiRW9K/P7O0fsw=";
     };
-    date = "2024-07-17";
+    date = "2024-08-07";
   };
   san-francisco-pro = {
     pname = "san-francisco-pro";
@@ -59,17 +59,17 @@
   };
   waybar = {
     pname = "waybar";
-    version = "79d3a1a2962cdad1ad02195916790ae1e63122c6";
+    version = "21906f07b312d56f51ce7cd2b26925cd12880ada";
     src = fetchgit {
       url = "https://github.com/alexays/waybar";
-      rev = "79d3a1a2962cdad1ad02195916790ae1e63122c6";
+      rev = "21906f07b312d56f51ce7cd2b26925cd12880ada";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-SaokQfNpyo+fgpEtIVTesZsmy5B5zzMZ0yygejqt3ug=";
+      sha256 = "sha256-7FBkX2hJrnX1VSKiE1jawHWitA4hTHnSgD4g7RjvhM8=";
     };
-    date = "2024-08-05";
+    date = "2024-08-07";
   };
   wezterm = {
     pname = "wezterm";
@@ -94,16 +94,16 @@
   };
   whitesur-gtk-theme = {
     pname = "whitesur-gtk-theme";
-    version = "bd8a979a75d0c06d48bb04c40adb569dc864caac";
+    version = "f8b9a8cf81003115c54968d8daa1cac61029bcdb";
     src = fetchgit {
       url = "https://github.com/vinceliuice/WhiteSur-gtk-theme";
-      rev = "bd8a979a75d0c06d48bb04c40adb569dc864caac";
+      rev = "f8b9a8cf81003115c54968d8daa1cac61029bcdb";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-yDP2Q/NhTGdonjpGTpR46EqW/2gAuYXgcnKzRK4aI20=";
+      sha256 = "sha256-7pTGygUyKR61Fbl+WTiInUfLa9s5go6KAxixgc6FsvA=";
     };
-    date = "2024-08-04";
+    date = "2024-08-07";
   };
 }

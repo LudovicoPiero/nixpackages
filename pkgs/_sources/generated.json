@@ -139,12 +139,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "f8ad6a9032f790fe57a37ad5154a3f71db21d7b2",
-            "sha256": "sha256-KZnJ+D1TBkO9ZJ5p4gOH1uLR5hSz4kj8V1V6IZvbKt0=",
+            "rev": "ece7f3c8311855c7d3fe463e4dce54554657109b",
+            "sha256": "sha256-kEZEOrXOnivOyyp1Z8PpKLo/blI4gx2om6j3TJaYFcw=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/vinceliuice/WhiteSur-gtk-theme"
         },
-        "version": "f8ad6a9032f790fe57a37ad5154a3f71db21d7b2"
+        "version": "ece7f3c8311855c7d3fe463e4dce54554657109b"
     }
 }

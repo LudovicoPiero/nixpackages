@@ -1,6 +1,7 @@
 {
   lib,
   stdenv,
+  dialog,
   gitUpdater,
   glib,
   gnome-shell,
@@ -95,6 +96,7 @@ lib.checkListOfEnum "${pname}: alt variants"
     inherit (sources.whitesur-gtk-theme) src version pname;
 
     nativeBuildInputs = [
+      dialog
       glib
       gnome-shell
       jdupes
@@ -113,10 +115,10 @@ lib.checkListOfEnum "${pname}: alt variants"
       done
 
       # Do not provide `sudo`, as it is not needed in our use case of the install script
-      substituteInPlace shell/lib-core.sh --replace '$(which sudo)' false
+      substituteInPlace shell/lib-core.sh --replace-quiet '$(which sudo)' false
 
       # Provides a dummy home directory
-      substituteInPlace shell/lib-core.sh --replace 'MY_HOME=$(getent passwd "''${MY_USERNAME}" | cut -d: -f6)' 'MY_HOME=/tmp'
+      substituteInPlace shell/lib-core.sh --replace-quiet 'MY_HOME=$(getent passwd "''${MY_USERNAME}" | cut -d: -f6)' 'MY_HOME=/tmp'
     '';
 
     dontBuild = true;

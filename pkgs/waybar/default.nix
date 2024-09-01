@@ -39,6 +39,7 @@
   udev,
   upower,
   wayland,
+  wayland-scanner,
   wireplumber,
   wlroots,
   wrapGAppsHook,
@@ -110,6 +111,7 @@ in
         pipewire
         spdlog
         wayland
+        wayland-scanner
         wlroots
       ]
       ++ lib.optionals cavaSupport [

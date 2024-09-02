@@ -10,6 +10,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-GMXSpNaShNu/Bce6TTnlgzGHV8MhHRVICv8hJqMi70w=";
     };
     date = "2024-02-12";
@@ -23,6 +24,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-1IqFVTEY6z8yNjpi5C+wahMN1kpt0OJATy5echjPXmc=";
     };
     date = "2024-09-01";
@@ -36,6 +38,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-MOE9NeU2i6Ws1GhGmppMnjOHkNLl2MQMJmGhaMzdoJM=";
     };
     date = "2024-08-08";
@@ -49,6 +52,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-mAXExj8n8gFHq19HfGy4UOJYKVGPYgarGd/04kUIqX4=";
     };
     date = "2021-06-22";
@@ -62,6 +66,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-XHE2Ix3JQ625Le1H8klJidhlOM9trJImlVJ8qkqH7SA=";
     };
     date = "2024-08-26";
@@ -75,6 +80,7 @@
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-By7g1yImmuVba/MTcB6ajNSHeWDRn4gO+p0UOWcCEgE=";
     };
     cargoLock."Cargo.lock" = {
@@ -88,14 +94,15 @@
   };
   whitesur-gtk-theme = {
     pname = "whitesur-gtk-theme";
-    version = "99297948faf0191f8c48d215b925e54c984f3c39";
+    version = "8795e203a0926b5dcd57411b1c26ac0147edfe65";
     src = fetchgit {
       url = "https://github.com/vinceliuice/WhiteSur-gtk-theme";
-      rev = "99297948faf0191f8c48d215b925e54c984f3c39";
+      rev = "8795e203a0926b5dcd57411b1c26ac0147edfe65";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-a32iHPcbMYuBy65FWm/fkjwJQE3aVScR3WJJzKTVx9k=";
+      sparseCheckout = [ ];
+      sha256 = "sha256-udHC1V4c+0u6BDhahNgqODGi0FtWuInMrAYgwA1Q2m0=";
     };
     date = "2024-09-02";
   };

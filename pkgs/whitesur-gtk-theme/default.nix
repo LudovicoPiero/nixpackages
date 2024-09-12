@@ -1,6 +1,6 @@
 {
   lib,
-  stdenv,
+  stdenvNoCC,
   dialog,
   gitUpdater,
   glib,
@@ -90,9 +90,8 @@ lib.checkListOfEnum "${pname}: alt variants"
   ]
   (single panelSize)
 
-  stdenv.mkDerivation
+  stdenvNoCC.mkDerivation
   {
-
     inherit (sources.whitesur-gtk-theme) src version pname;
 
     nativeBuildInputs = [
@@ -145,11 +144,11 @@ lib.checkListOfEnum "${pname}: alt variants"
 
     passthru.updateScript = gitUpdater { };
 
-    meta = with lib; {
+    meta = {
       description = "MacOS Big Sur like theme for Gnome desktops";
       homepage = "https://github.com/vinceliuice/WhiteSur-gtk-theme";
-      license = licenses.mit;
-      platforms = platforms.unix;
-      maintainers = [ maintainers.romildo ];
+      license = lib.licenses.mit;
+      platforms = lib.platforms.unix;
+      maintainers = [ lib.maintainers.ludovicopiero ];
     };
   }

@@ -8,8 +8,6 @@
     in
     {
       packages = {
-        cascade-firefox-theme = pkgs.callPackage ./cascade-firefox-theme { inherit sources; };
-
         catppuccin-fcitx5 = pkgs.callPackage ./catppuccin-fcitx5 { inherit sources; };
 
         iosevka-q = pkgs.callPackage ./iosevka-q { };
@@ -35,10 +33,7 @@
           inherit sources;
         };
 
-        whitesur-gtk-theme = pkgs.callPackage ./whitesur-gtk-theme {
-          inherit (pkgs.gnome) gnome-shell;
-          inherit sources;
-        };
+        whitesur-gtk-theme = pkgs.callPackage ./whitesur-gtk-theme { inherit sources; };
       };
     };
 }

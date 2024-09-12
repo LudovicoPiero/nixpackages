@@ -17,11 +17,11 @@ stdenvNoCC.mkDerivation {
 
     runHook postBuild
   '';
-  meta = with lib; {
+  meta = {
     description = "San Francisco Pro Fonts";
     homepage = "https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts";
-    license = licenses.unfree;
-    maintainers = with maintainers; [ludovicopiero];
-    platforms = platforms.all;
+    license = lib.licenses.unfree;
+    maintainers = with lib.maintainers; [ ludovicopiero ];
+    platforms = lib.platforms.all;
   };
 }

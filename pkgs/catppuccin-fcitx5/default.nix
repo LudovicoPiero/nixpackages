@@ -1,10 +1,10 @@
 {
   lib,
-  stdenv,
+  stdenvNoCC,
   sources,
 }:
 
-stdenv.mkDerivation (finalAttrs: {
+stdenvNoCC.mkDerivation (finalAttrs: {
   inherit (sources.catppuccin-fcitx5) pname version src;
 
   dontBuild = true;

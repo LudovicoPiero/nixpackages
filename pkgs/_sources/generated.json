@@ -13,6 +13,7 @@
             "name": null,
             "rev": "3471b918d4b5aab2d3c3dd9f2c3b9c18fb470e8e",
             "sha256": "sha256-1IqFVTEY6z8yNjpi5C+wahMN1kpt0OJATy5echjPXmc=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/catppuccin/fcitx5"
         },
@@ -32,6 +33,7 @@
             "name": null,
             "rev": "fb5b578a4f49ae8705e5fea0419242ed1b8dba70",
             "sha256": "sha256-MOE9NeU2i6Ws1GhGmppMnjOHkNLl2MQMJmGhaMzdoJM=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/rafaelmardojai/firefox-gnome-theme"
         },
@@ -51,6 +53,7 @@
             "name": null,
             "rev": "8bfea09aa6f1139479f80358b2e1e5c6dc991a58",
             "sha256": "sha256-mAXExj8n8gFHq19HfGy4UOJYKVGPYgarGd/04kUIqX4=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts"
         },
@@ -58,7 +61,7 @@
     },
     "waybar": {
         "cargoLocks": null,
-        "date": "2024-09-10",
+        "date": "2024-09-13",
         "extract": null,
         "name": "waybar",
         "passthru": null,
@@ -68,12 +71,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "6560e32bc1fd3c777d7094b2033a4358a98ca0ee",
-            "sha256": "sha256-UbVApb+B5QyOl+zrc2oKQ6+M5aKRiw3EotrjxzUfp9A=",
+            "rev": "d177969f51b3435308a520c9c0385ae80579b255",
+            "sha256": "sha256-JlN9FLUuxwXlIACBW+NO4OiqVQ1pUNOxzksl2azoWi4=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/alexays/waybar"
         },
-        "version": "6560e32bc1fd3c777d7094b2033a4358a98ca0ee"
+        "version": "d177969f51b3435308a520c9c0385ae80579b255"
     },
     "wezterm": {
         "cargoLocks": {
@@ -97,6 +101,7 @@
             "name": null,
             "rev": "30345b36d8a00fed347e4df5dadd83915a7693fb",
             "sha256": "sha256-By7g1yImmuVba/MTcB6ajNSHeWDRn4gO+p0UOWcCEgE=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/wez/wezterm"
         },
@@ -116,6 +121,7 @@
             "name": null,
             "rev": "ec179b2109f2e8fa67ff31ac8a4f68f39cd03d3c",
             "sha256": "sha256-V8CtuuRjhIoXO4LJgy5LYXTadFm17vp4/WVbkjm49oE=",
+            "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/vinceliuice/WhiteSur-gtk-theme"
         },

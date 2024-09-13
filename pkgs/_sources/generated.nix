@@ -10,6 +10,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-1IqFVTEY6z8yNjpi5C+wahMN1kpt0OJATy5echjPXmc=";
     };
     date = "2024-09-01";
@@ -23,6 +24,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-MOE9NeU2i6Ws1GhGmppMnjOHkNLl2MQMJmGhaMzdoJM=";
     };
     date = "2024-08-08";
@@ -36,22 +38,24 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-mAXExj8n8gFHq19HfGy4UOJYKVGPYgarGd/04kUIqX4=";
     };
     date = "2021-06-22";
   };
   waybar = {
     pname = "waybar";
-    version = "6560e32bc1fd3c777d7094b2033a4358a98ca0ee";
+    version = "d177969f51b3435308a520c9c0385ae80579b255";
     src = fetchgit {
       url = "https://github.com/alexays/waybar";
-      rev = "6560e32bc1fd3c777d7094b2033a4358a98ca0ee";
+      rev = "d177969f51b3435308a520c9c0385ae80579b255";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
-      sha256 = "sha256-UbVApb+B5QyOl+zrc2oKQ6+M5aKRiw3EotrjxzUfp9A=";
+      sparseCheckout = [ ];
+      sha256 = "sha256-JlN9FLUuxwXlIACBW+NO4OiqVQ1pUNOxzksl2azoWi4=";
     };
-    date = "2024-09-10";
+    date = "2024-09-13";
   };
   wezterm = {
     pname = "wezterm";
@@ -62,6 +66,7 @@
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-By7g1yImmuVba/MTcB6ajNSHeWDRn4gO+p0UOWcCEgE=";
     };
     cargoLock."Cargo.lock" = {
@@ -82,6 +87,7 @@
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
+      sparseCheckout = [ ];
       sha256 = "sha256-V8CtuuRjhIoXO4LJgy5LYXTadFm17vp4/WVbkjm49oE=";
     };
     date = "2024-09-12";

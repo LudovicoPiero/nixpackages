@@ -31,7 +31,7 @@
   ffmpeg_4,
   curlWithGnuTls,
   zlib,
-  gnome,
+  zenity,
   at-spi2-atk,
   at-spi2-core,
   libpulseaudio,
@@ -191,7 +191,7 @@ stdenv.mkDerivation {
         ''
       } \
       --prefix LD_LIBRARY_PATH : "$librarypath" \
-      --prefix PATH : "${gnome.zenity}/bin" \
+      --prefix PATH : "${zenity}/bin" \
       --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--enable-features=UseOzonePlatform --ozone-platform=wayland}}"
 
     # fix Icon line in the desktop file (#48062)

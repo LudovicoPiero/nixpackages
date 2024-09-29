@@ -45,51 +45,51 @@
   };
   waybar = {
     pname = "waybar";
-    version = "486b99c22fb391eaabb301fbe77714091f27b2c1";
+    version = "281911c9b3c14718b108b1711ae9d62ead73f136";
     src = fetchgit {
       url = "https://github.com/alexays/waybar";
-      rev = "486b99c22fb391eaabb301fbe77714091f27b2c1";
+      rev = "281911c9b3c14718b108b1711ae9d62ead73f136";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-an5OxPfu/VJqGsFvxpVHUMcPzrhDaH6Ezzk5gCVs5iA=";
+      sha256 = "sha256-vaaIL/MjGfGRn0v99WYH69N06yaZh6lLb5xWU9WYECk=";
     };
-    date = "2024-09-28";
+    date = "2024-09-29";
   };
   wezterm = {
     pname = "wezterm";
-    version = "2b76c63bb618d26609434c06282c8755229c4099";
+    version = "a2f2c07a29f5c98f6736cde0c86b24887f9fd48a";
     src = fetchgit {
       url = "https://github.com/wez/wezterm";
-      rev = "2b76c63bb618d26609434c06282c8755229c4099";
+      rev = "a2f2c07a29f5c98f6736cde0c86b24887f9fd48a";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-mX6Jg29G5UpgItW7zGdR5lxKfAWFX1+eVq2yByyGx9c=";
+      sha256 = "sha256-KY/9DpHPLKv68a57CFvtRhnhxsXtJ1UmYMfeo3QH9qs=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-2b76c63bb618d26609434c06282c8755229c4099/Cargo.lock;
+      lockFile = ./wezterm-a2f2c07a29f5c98f6736cde0c86b24887f9fd48a/Cargo.lock;
       outputHashes = {
         "xcb-imdkit-0.3.0" = "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo=";
         "sqlite-cache-0.1.3" = "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=";
       };
     };
-    date = "2024-09-22";
+    date = "2024-09-28";
   };
   whitesur-gtk-theme = {
     pname = "whitesur-gtk-theme";
-    version = "02036bfd0a751de03ae9092772c581d279a7610f";
+    version = "cb295bd36dbd2a2835289d7e2c935c12044979e5";
     src = fetchgit {
       url = "https://github.com/vinceliuice/WhiteSur-gtk-theme";
-      rev = "02036bfd0a751de03ae9092772c581d279a7610f";
+      rev = "cb295bd36dbd2a2835289d7e2c935c12044979e5";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-MbJ9KvoiFAeThmJJbne0Y3vGCwi7dGTlraRPih0tIOY=";
+      sha256 = "sha256-TQ015xsLDSUZyoeNEMKU/vgg71WMVK98BX4SwXyVs8g=";
     };
-    date = "2024-09-25";
+    date = "2024-09-29";
   };
 }

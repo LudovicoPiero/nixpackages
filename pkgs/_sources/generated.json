@@ -61,7 +61,7 @@
     },
     "waybar": {
         "cargoLocks": null,
-        "date": "2024-09-29",
+        "date": "2024-09-30",
         "extract": null,
         "name": "waybar",
         "passthru": null,
@@ -71,13 +71,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "281911c9b3c14718b108b1711ae9d62ead73f136",
-            "sha256": "sha256-vaaIL/MjGfGRn0v99WYH69N06yaZh6lLb5xWU9WYECk=",
+            "rev": "e7b2d33d993873f4caa1790a8ab2ec6e50dcaef7",
+            "sha256": "sha256-li8/qZn9SC/USnACcmvSdi78P4HMDiMEFQhqN9M+fy4=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/alexays/waybar"
         },
-        "version": "281911c9b3c14718b108b1711ae9d62ead73f136"
+        "version": "e7b2d33d993873f4caa1790a8ab2ec6e50dcaef7"
     },
     "wezterm": {
         "cargoLocks": {
@@ -109,7 +109,7 @@
     },
     "whitesur-gtk-theme": {
         "cargoLocks": null,
-        "date": "2024-09-29",
+        "date": "2024-09-30",
         "extract": null,
         "name": "whitesur-gtk-theme",
         "passthru": null,
@@ -119,12 +119,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "cb295bd36dbd2a2835289d7e2c935c12044979e5",
-            "sha256": "sha256-TQ015xsLDSUZyoeNEMKU/vgg71WMVK98BX4SwXyVs8g=",
+            "rev": "3077e053f9be60dfe5562a7955beb3559cd99047",
+            "sha256": "sha256-MGTAEf87OVQL6sk9Jx/X7LwrDTb9Nb+hXa05WsYDh/4=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/vinceliuice/WhiteSur-gtk-theme"
         },
-        "version": "cb295bd36dbd2a2835289d7e2c935c12044979e5"
+        "version": "3077e053f9be60dfe5562a7955beb3559cd99047"
     }
 }

@@ -114,10 +114,10 @@ lib.checkListOfEnum "${pname}: alt variants"
       done
 
       # Do not provide `sudo`, as it is not needed in our use case of the install script
-      substituteInPlace shell/lib-core.sh --replace-quiet '$(which sudo)' false
+      substituteInPlace libs/lib-core.sh --replace-quiet '$(which sudo)' false
 
       # Provides a dummy home directory
-      substituteInPlace shell/lib-core.sh --replace-quiet 'MY_HOME=$(getent passwd "''${MY_USERNAME}" | cut -d: -f6)' 'MY_HOME=/tmp'
+      substituteInPlace libs/lib-core.sh --replace-quiet 'MY_HOME=$(getent passwd "''${MY_USERNAME}" | cut -d: -f6)' 'MY_HOME=/tmp'
     '';
 
     dontBuild = true;

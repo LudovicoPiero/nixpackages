@@ -109,7 +109,7 @@
     },
     "whitesur-gtk-theme": {
         "cargoLocks": null,
-        "date": "2024-11-18",
+        "date": "2024-11-24",
         "extract": null,
         "name": "whitesur-gtk-theme",
         "passthru": null,
@@ -119,12 +119,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "1afceb0b311e8a425c5c12ee8b8ac1a79bbc6642",
-            "sha256": "sha256-SSGb7EdJN8E4N8b98VO7oFTeOmhKEo/0qhso9410ihg=",
+            "rev": "4ce80c209b68782ddcc44e80feff86bb72f7e9cf",
+            "sha256": "sha256-BE3CsHdxn2h0/DpMlZkyxOSdSpjC0CuOS8lMRVd2eZk=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/vinceliuice/WhiteSur-gtk-theme"
         },
-        "version": "1afceb0b311e8a425c5c12ee8b8ac1a79bbc6642"
+        "version": "4ce80c209b68782ddcc44e80feff86bb72f7e9cf"
     }
 }

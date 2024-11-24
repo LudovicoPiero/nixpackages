@@ -38,7 +38,7 @@ pull_request_rules:
   - name: Toggle labels based on CI state
     conditions:
       - check-failure=Run Flake Checker
-      - check-failure=Build all packages
+      - check-failure=All Garnix checks
     actions:
       label:
         toggle:

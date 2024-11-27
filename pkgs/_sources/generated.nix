@@ -17,17 +17,17 @@
   };
   firefox-gnome-theme = {
     pname = "firefox-gnome-theme";
-    version = "823756d8ddd21cfd3a24a87dad402e490e0eb5ee";
+    version = "83d2775a9dd28669fdbe798b9ceb97715d0341c0";
     src = fetchgit {
       url = "https://github.com/rafaelmardojai/firefox-gnome-theme";
-      rev = "823756d8ddd21cfd3a24a87dad402e490e0eb5ee";
+      rev = "83d2775a9dd28669fdbe798b9ceb97715d0341c0";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-lf9MQs8+NUvQd8b5t+7c4kLqUQixGO9WwWcLa1XYuiQ=";
+      sha256 = "sha256-g9YG5xRj67gqsFn5grRQe3bPjp2LKucxoAB+HtxzCK0=";
     };
-    date = "2024-11-03";
+    date = "2024-11-27";
   };
   san-francisco-pro = {
     pname = "san-francisco-pro";

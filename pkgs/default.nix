@@ -1,39 +1,39 @@
 {
-  systems = [ "x86_64-linux" ];
+  systems = ["x86_64-linux"];
 
-  perSystem =
-    { pkgs, ... }:
-    let
-      sources = pkgs.callPackage ./_sources/generated.nix { };
-    in
-    {
-      packages = {
-        catppuccin-fcitx5 = pkgs.callPackage ./catppuccin-fcitx5 { inherit sources; };
+  perSystem = {pkgs, ...}: let
+    sources = pkgs.callPackage ./_sources/generated.nix {};
+  in {
+    packages = {
+      ArchiSteamFarm = pkgs.callPackage ./ArchiSteamFarm {};
 
-        iosevka-q = pkgs.callPackage ./iosevka-q { };
+      catppuccin-fcitx5 = pkgs.callPackage ./catppuccin-fcitx5 {inherit sources;};
 
-        firefox-gnome-theme = pkgs.callPackage ./firefox-gnome-theme { inherit sources; };
+      iosevka-q = pkgs.callPackage ./iosevka-q {};
 
-        san-francisco-pro = pkgs.callPackage ./san-francisco-pro { inherit sources; };
+      firefox-gnome-theme = pkgs.callPackage ./firefox-gnome-theme {inherit sources;};
 
-        sarasa-gothic = pkgs.callPackage ./sarasa-gothic { };
+      san-francisco-pro = pkgs.callPackage ./san-francisco-pro {inherit sources;};
 
-        spotify = pkgs.callPackage ./spotify { };
+      sarasa-gothic = pkgs.callPackage ./sarasa-gothic {};
 
-        waybar = pkgs.callPackage ./waybar { inherit sources; };
+      spotify = pkgs.callPackage ./spotify {};
 
-        wezterm = pkgs.darwin.apple_sdk_11_0.callPackage ./wezterm {
-          inherit (pkgs.darwin.apple_sdk_11_0.frameworks)
-            Cocoa
-            CoreGraphics
-            Foundation
-            UserNotifications
-            System
-            ;
-          inherit sources;
-        };
+      waybar = pkgs.callPackage ./waybar {inherit sources;};
 
-        whitesur-gtk-theme = pkgs.callPackage ./whitesur-gtk-theme { inherit sources; };
+      wezterm = pkgs.darwin.apple_sdk_11_0.callPackage ./wezterm {
+        inherit
+          (pkgs.darwin.apple_sdk_11_0.frameworks)
+          Cocoa
+          CoreGraphics
+          Foundation
+          UserNotifications
+          System
+          ;
+        inherit sources;
       };
+
+      whitesur-gtk-theme = pkgs.callPackage ./whitesur-gtk-theme {inherit sources;};
     };
+  };
 }

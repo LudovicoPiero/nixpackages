@@ -21,7 +21,7 @@
     },
     "firefox-gnome-theme": {
         "cargoLocks": null,
-        "date": "2024-11-28",
+        "date": "2024-11-29",
         "extract": null,
         "name": "firefox-gnome-theme",
         "passthru": null,
@@ -31,13 +31,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "ef6ac4285eaac6053338a6240bc615902a839493",
-            "sha256": "sha256-k7v5PE6OcqMkC/u7aokwcxKDmTKM+ejiZGCsH9MK0s0=",
+            "rev": "17b4341c3f8f820632fef30b9fcf464fc9896297",
+            "sha256": "sha256-mLK537iAkydxnlnZJHSrT35rTIZVUTAnI0zvKg1IEw4=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/rafaelmardojai/firefox-gnome-theme"
         },
-        "version": "ef6ac4285eaac6053338a6240bc615902a839493"
+        "version": "17b4341c3f8f820632fef30b9fcf464fc9896297"
     },
     "san-francisco-pro": {
         "cargoLocks": null,
@@ -82,7 +82,7 @@
     "wezterm": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wezterm-5cccee316aaa6601633af5d993fac400a18ad902/Cargo.lock",
+                "./wezterm-74015a95c7ef574c369c32f7c16aac1c67ec380c/Cargo.lock",
                 {
                     "sqlite-cache-0.1.3": "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=",
                     "xcb-imdkit-0.3.0": "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo="
@@ -99,17 +99,17 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "5cccee316aaa6601633af5d993fac400a18ad902",
-            "sha256": "sha256-pC5iMJWLVIbF2rLPczA+NSsmhiz8l1hK5IsUoJ0ubbc=",
+            "rev": "74015a95c7ef574c369c32f7c16aac1c67ec380c",
+            "sha256": "sha256-hOKuOPdq/bSN0pZARsylk4eWcSIFMcB88MXR/fI5WII=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/wez/wezterm"
         },
-        "version": "5cccee316aaa6601633af5d993fac400a18ad902"
+        "version": "74015a95c7ef574c369c32f7c16aac1c67ec380c"
     },
     "whitesur-gtk-theme": {
         "cargoLocks": null,
-        "date": "2024-11-24",
+        "date": "2024-11-29",
         "extract": null,
         "name": "whitesur-gtk-theme",
         "passthru": null,
@@ -119,12 +119,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "4ce80c209b68782ddcc44e80feff86bb72f7e9cf",
-            "sha256": "sha256-BE3CsHdxn2h0/DpMlZkyxOSdSpjC0CuOS8lMRVd2eZk=",
+            "rev": "0d4c85aa39bdaba06631cb5c614c88dfb62bbbbd",
+            "sha256": "sha256-o8NZSN25AgzLYOLMSf0L0Fz9wmp/XaepvaDj7I+/Z1w=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/vinceliuice/WhiteSur-gtk-theme"
         },
-        "version": "4ce80c209b68782ddcc44e80feff86bb72f7e9cf"
+        "version": "0d4c85aa39bdaba06631cb5c614c88dfb62bbbbd"
     }
 }

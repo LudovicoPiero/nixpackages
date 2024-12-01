@@ -17,17 +17,17 @@
   };
   firefox-gnome-theme = {
     pname = "firefox-gnome-theme";
-    version = "17b4341c3f8f820632fef30b9fcf464fc9896297";
+    version = "c1d082e47cb38b9e8d8d6899398f3bae51a72c34";
     src = fetchgit {
       url = "https://github.com/rafaelmardojai/firefox-gnome-theme";
-      rev = "17b4341c3f8f820632fef30b9fcf464fc9896297";
+      rev = "c1d082e47cb38b9e8d8d6899398f3bae51a72c34";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-mLK537iAkydxnlnZJHSrT35rTIZVUTAnI0zvKg1IEw4=";
+      sha256 = "sha256-Hf2NK58bTV1hy6FxvKpyNzm59tyMPzDjc8cGcWiTLyQ=";
     };
-    date = "2024-11-29";
+    date = "2024-11-30";
   };
   san-francisco-pro = {
     pname = "san-francisco-pro";
@@ -45,17 +45,17 @@
   };
   waybar = {
     pname = "waybar";
-    version = "20ca48c3b863a8b11dc149161a3e6e33ce97eea5";
+    version = "3abac0abfd316a54772ae1146a28563bc4f47838";
     src = fetchgit {
       url = "https://github.com/alexays/waybar";
-      rev = "20ca48c3b863a8b11dc149161a3e6e33ce97eea5";
+      rev = "3abac0abfd316a54772ae1146a28563bc4f47838";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-5uRSlSdsfCudEFanhXJ8cRV+U18QZdu2cWYjIzeOvEs=";
+      sha256 = "sha256-8Yd1TokY0ZwJp4PZYU8KoxhFHUL1FddihPXWPQCwjiw=";
     };
-    date = "2024-11-20";
+    date = "2024-12-01";
   };
   wezterm = {
     pname = "wezterm";
@@ -80,15 +80,15 @@
   };
   whitesur-gtk-theme = {
     pname = "whitesur-gtk-theme";
-    version = "8b22fbefe7bd351ff1d9f1139a63113d64ab8b74";
+    version = "e36a97939eca4cc0d18d7c71c26383b4371afba4";
     src = fetchgit {
       url = "https://github.com/vinceliuice/WhiteSur-gtk-theme";
-      rev = "8b22fbefe7bd351ff1d9f1139a63113d64ab8b74";
+      rev = "e36a97939eca4cc0d18d7c71c26383b4371afba4";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-MkRPYhdoWKKjjo+phqDVgJ41WOGUtXHf8/2qL04WnbA=";
+      sha256 = "sha256-hq0AH6JpdWXk7WjsLH3Pf4CrXy9KE7oZWSQfp/o7hpc=";
     };
     date = "2024-12-01";
   };

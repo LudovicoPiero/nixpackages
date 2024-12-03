@@ -46,8 +46,6 @@ jobs:
   nix-update:
     if: github.repository == 'ludovicopiero/nixpackages' # Don't do this in forks
     runs-on: ubuntu-latest
-    outputs:
-      id: pr
     strategy:
       matrix:
         packages: [iosevka-q, sarasa-gothic]
@@ -74,8 +72,8 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: "${{ secrets.PR_TOKEN }}"
-          title: "Package Update"
-          body: "BOOMP BOOMP"
+          title: "Package Update for ${{ matrix.packages }}"
+          body: "Automated package update for ${{ matrix.packages }}"
           labels: automated,uwu, keep-up-to-date
-          branch: "nix-update"
+          branch: "nix-update-${{ matrix.packages }}-${{ github.run_id }}"
           delete-branch: true

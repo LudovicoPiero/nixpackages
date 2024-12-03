@@ -313,11 +313,6 @@
   })
   (fetchNuGet {
     pname = "Microsoft.Extensions.Configuration";
-    version = "8.0.0";
-    hash = "sha256-9BPsASlxrV8ilmMCjdb3TiUcm5vFZxkBnAI/fNBSEyA=";
-  })
-  (fetchNuGet {
-    pname = "Microsoft.Extensions.Configuration";
     version = "9.0.0";
     hash = "sha256-uBLeb4z60y8z7NelHs9uT3cLD6wODkdwyfJm6/YZLDM=";
   })
@@ -558,13 +553,13 @@
   })
   (fetchNuGet {
     pname = "NLog.Extensions.Logging";
-    version = "5.3.13";
-    hash = "sha256-H1u+mccp7XYHJePISiV6PgqGLJ/gAnK/+Q/wBf4jq+w=";
+    version = "5.3.15";
+    hash = "sha256-otzOJncsEmzeGkJ9yxuwQgYFlKIG9ALX+DaKJ/Jhux4=";
   })
   (fetchNuGet {
     pname = "NLog.Web.AspNetCore";
-    version = "5.3.14";
-    hash = "sha256-slCdA4LZ6nDhBirE5/dXyDmVuWKCZiUgLvB6wCgkCKE=";
+    version = "5.3.15";
+    hash = "sha256-JaxCAfsgYM8N7bmAciDowSdOxtMS3eoMszODqWPcqao=";
   })
   (fetchNuGet {
     pname = "OpenTelemetry";
@@ -613,8 +608,8 @@
   })
   (fetchNuGet {
     pname = "OpenTelemetry.Instrumentation.Http";
-    version = "1.9.0";
-    hash = "sha256-y/UbDt6n6heD+ayzv0xPurXLFNL+eSldwqoyGpvCg7o=";
+    version = "1.10.0";
+    hash = "sha256-U9ojqPSJu4OQEAfRJ+7MjzxayzsGWI0Ep8CPAcpkhhA=";
   })
   (fetchNuGet {
     pname = "OpenTelemetry.Instrumentation.Runtime";
@@ -638,28 +633,28 @@
   })
   (fetchNuGet {
     pname = "Swashbuckle.AspNetCore";
-    version = "7.0.0";
-    hash = "sha256-zPQuaYFxAP0B3l/E0HN85+Nw2E+p7RzHRgpxRbQPyZM=";
+    version = "7.1.0";
+    hash = "sha256-4puaFKTRLJtqy/bjcxr5JJuZ/Ko7MDw7MrxISHl002A=";
   })
   (fetchNuGet {
     pname = "Swashbuckle.AspNetCore.Annotations";
-    version = "7.0.0";
-    hash = "sha256-YEiagbVgtMw9OVNNn0nanubjE2+pJA2ltE8Ftv9OKR4=";
+    version = "7.1.0";
+    hash = "sha256-4hD7FqfXeVySSRzLhZ2RSGEUdLjJRc4fqZIgAl5xjIA=";
   })
   (fetchNuGet {
     pname = "Swashbuckle.AspNetCore.Swagger";
-    version = "7.0.0";
-    hash = "sha256-y1d+4xauBMC7RfsfVTsWz0VrVnh3iFBy0G8eux3IYcc=";
+    version = "7.1.0";
+    hash = "sha256-xxekkBO9brFYO0oId6OQVXdv5nXGjpwR3ZEcGe6rr0Q=";
   })
   (fetchNuGet {
     pname = "Swashbuckle.AspNetCore.SwaggerGen";
-    version = "7.0.0";
-    hash = "sha256-jPwbnL1QPqtFuuIXvyoQJojwymH3TZ0CMLUuAovasDc=";
+    version = "7.1.0";
+    hash = "sha256-4Gm9yxjueSeGFaedV8ncy+jtDwjFBVChpqCCK8E+qfY=";
   })
   (fetchNuGet {
     pname = "Swashbuckle.AspNetCore.SwaggerUI";
-    version = "7.0.0";
-    hash = "sha256-9gawFmLpag70BLk5pYj7HdEzBPxC2SUH1kdrk5YfDe8=";
+    version = "7.1.0";
+    hash = "sha256-br975EeG6O2fwyk8cFcjU/JkYrI35ZkqHm94j3qM5Cg=";
   })
   (fetchNuGet {
     pname = "System.Collections.Immutable";

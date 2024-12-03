@@ -50,7 +50,7 @@ jobs:
       id: pr
     strategy:
       matrix:
-        packages: [ArchiSteamFarm, iosevka-q, sarasa-gothic]
+        packages: [iosevka-q, sarasa-gothic]
     steps:
       - name: Checkout
         uses: actions/checkout@v4

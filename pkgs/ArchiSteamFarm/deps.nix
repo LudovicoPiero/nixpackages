@@ -428,23 +428,23 @@
   })
   (fetchNuGet {
     pname = "Microsoft.IdentityModel.Abstractions";
-    version = "8.2.1";
-    hash = "sha256-+9aIQ5tVPM915SEaquiiVUYaW2wk2MvkYWEMTzGYEl4=";
+    version = "8.3.0";
+    hash = "sha256-LSZ91DbPswCWibHNSGWC3Jh3KQwAthVaU3r7XQJyutM=";
   })
   (fetchNuGet {
     pname = "Microsoft.IdentityModel.JsonWebTokens";
-    version = "8.2.1";
-    hash = "sha256-0tL7K87O8w2IOje7+WFZQiPiYFWLMqMRsVoHKVose+0=";
+    version = "8.3.0";
+    hash = "sha256-Hiiv10LSOMIt7KsQSsteJV4DFkLebHMYmoISn/pl2F8=";
   })
   (fetchNuGet {
     pname = "Microsoft.IdentityModel.Logging";
-    version = "8.2.1";
-    hash = "sha256-0FHmPBoogYIEAa7hxVvxIYy1jCCB3NmnVS5eoVWsjrU=";
+    version = "8.3.0";
+    hash = "sha256-0P14ilpV+9yp+nqZWI/ilkTnRas4pic8NjNVcYxuXWs=";
   })
   (fetchNuGet {
     pname = "Microsoft.IdentityModel.Tokens";
-    version = "8.2.1";
-    hash = "sha256-kO/Xrv/XbJ0hKqA0PFWMKJA8EBCuAjBO7D6XoPH0l8k=";
+    version = "8.3.0";
+    hash = "sha256-+TzBeZH2Tgs0EMoU5QuCdOD/5V8xM7MHClX578AUIxw=";
   })
   (fetchNuGet {
     pname = "Microsoft.NET.Test.Sdk";
@@ -503,23 +503,23 @@
   })
   (fetchNuGet {
     pname = "MSTest";
-    version = "3.6.3";
-    hash = "sha256-CYwlvONt3WDpYIj4tLHImciGiyZU7P2ozNr5Iup+B6U=";
+    version = "3.6.4";
+    hash = "sha256-G7I371Rq+AQ+QmHbZ9/wOduj0Yfoa6rFxmvygf7Kol4=";
   })
   (fetchNuGet {
     pname = "MSTest.Analyzers";
-    version = "3.6.3";
-    hash = "sha256-/4KD5UEQ32a+IjVQ1tS3K1dci32+KZOZhomYUr4U5hk=";
+    version = "3.6.4";
+    hash = "sha256-jlr8GVhTw32ErLq6YEMA4+EpWL5UO/q9I/BT9TDixK4=";
   })
   (fetchNuGet {
     pname = "MSTest.TestAdapter";
-    version = "3.6.3";
-    hash = "sha256-eCN8EVtxqARpDUZdsihBJaC4UUB/jrhj5ya0HrKWbo0=";
+    version = "3.6.4";
+    hash = "sha256-ymaeH9pYE8O1ChlfJ4hvpV9KP9eVJCEm4xhGHngapQY=";
   })
   (fetchNuGet {
     pname = "MSTest.TestFramework";
-    version = "3.6.3";
-    hash = "sha256-3nHMesxzDC5AwoLLV+It6r1PEVHWra/Gdo3qSji5cKM=";
+    version = "3.6.4";
+    hash = "sha256-paCBVA5XtiAB8OwkbJSbw7v+HvTFLN9qHRgvQaeJKC0=";
   })
   (fetchNuGet {
     pname = "Newtonsoft.Json";

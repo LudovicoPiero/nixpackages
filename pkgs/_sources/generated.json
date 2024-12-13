@@ -21,7 +21,7 @@
     },
     "firefox-gnome-theme": {
         "cargoLocks": null,
-        "date": "2024-12-03",
+        "date": "2024-12-12",
         "extract": null,
         "name": "firefox-gnome-theme",
         "passthru": null,
@@ -31,13 +31,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "aa9b67045fcdec7ae045b36d7a41b36b3463b842",
-            "sha256": "sha256-Q8W1YlsZmxhUaXLOJhPCeEzKqaqmspT9VKYZxn5Kh40=",
+            "rev": "beca016e58d0da1237471993933c853f9b934f44",
+            "sha256": "sha256-onO+zd9ssgsLC5ax3UWPZ41DcZPkxdXT8JmmjDkw944=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/rafaelmardojai/firefox-gnome-theme"
         },
-        "version": "aa9b67045fcdec7ae045b36d7a41b36b3463b842"
+        "version": "beca016e58d0da1237471993933c853f9b934f44"
     },
     "san-francisco-pro": {
         "cargoLocks": null,

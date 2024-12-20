@@ -1,4 +1,3 @@
-# Source: https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/applications/misc/ArchiSteamFarm/default.nix
 {
   lib,
   buildDotnetModule,
@@ -12,19 +11,19 @@
 buildDotnetModule rec {
   pname = "ArchiSteamFarm";
   # nixpkgs-update: no auto update
-  version = "6.1.0.3";
+  version = "6.1.1.1";
 
   src = fetchFromGitHub {
     owner = "JustArchiNET";
     repo = "ArchiSteamFarm";
     rev = version;
-    hash = "sha256-3NOeKdXb1tz4qx+tCs6QKfze2KLfyodKwt/aNx6tLvI=";
+    hash = "sha256-KppaYnAq9kyH2KzoDzVOqulpsgfNILsb7ukKHUAPqUE=";
   };
 
   dotnet-runtime = dotnetCorePackages.aspnetcore_9_0;
   dotnet-sdk = dotnetCorePackages.sdk_9_0;
 
-  nugetDeps = ./deps.nix;
+  nugetDeps = ./deps.json;
 
   projectFile = "ArchiSteamFarm.sln";
   executable = "ArchiSteamFarm";

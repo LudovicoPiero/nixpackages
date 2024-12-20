@@ -5,8 +5,6 @@
     sources = pkgs.callPackage ./_sources/generated.nix {};
   in {
     packages = {
-      ArchiSteamFarm = pkgs.callPackage ./ArchiSteamFarm {};
-
       catppuccin-fcitx5 = pkgs.callPackage ./catppuccin-fcitx5 {inherit sources;};
 
       iosevka-q = pkgs.callPackage ./iosevka-q {};

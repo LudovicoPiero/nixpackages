@@ -11,10 +11,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4.1.3
+
       - run: git config --global user.email "maximiliansforza@proton.me"
       - run: git config --global user.name "Maximilian Sforza"
+
       - name: Install Nix
-        uses: DeterminateSystems/nix-installer-action@main
+        uses: cachix/install-nix-action@v30
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+
       - name: Update flake.lock
         uses: DeterminateSystems/update-flake-lock@main
         with:

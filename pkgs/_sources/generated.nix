@@ -17,17 +17,14 @@
   };
   firefox-gnome-theme = {
     pname = "firefox-gnome-theme";
-    version = "71eb4ac85675be51fed9daf89fcbc07c594e2d2c";
-    src = fetchgit {
-      url = "https://github.com/rafaelmardojai/firefox-gnome-theme";
-      rev = "71eb4ac85675be51fed9daf89fcbc07c594e2d2c";
+    version = "v135";
+    src = fetchFromGitHub {
+      owner = "rafaelmardojai";
+      repo = "firefox-gnome-theme";
+      rev = "v135";
       fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ ];
-      sha256 = "sha256-VtrjCxGdDdl/2jhsfHpemdHOWd1a96hq9MvTufnXLW0=";
+      sha256 = "sha256-OtF9hFsFXLpCpz5Oy+I7yAE6GgenpFEzUXTc9AtoZQk=";
     };
-    date = "2025-02-09";
   };
   san-francisco-pro = {
     pname = "san-francisco-pro";
@@ -59,18 +56,18 @@
   };
   wezterm = {
     pname = "wezterm";
-    version = "ef689c5eee15270febef5ed02eda0d7960e85496";
+    version = "1bd7e9ec398de9c92d80fe5d1a44ef98d4b1af24";
     src = fetchgit {
       url = "https://github.com/wez/wezterm";
-      rev = "ef689c5eee15270febef5ed02eda0d7960e85496";
+      rev = "1bd7e9ec398de9c92d80fe5d1a44ef98d4b1af24";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-qsF3e2F9u2VYaCy7Yn9XOVsDs9VWuOL9zY/zj6TX7kY=";
+      sha256 = "sha256-c74YLv775mZgZ8y2cJ+Xuue91s4491TWKkGl1zwztYU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-ef689c5eee15270febef5ed02eda0d7960e85496/Cargo.lock;
+      lockFile = ./wezterm-1bd7e9ec398de9c92d80fe5d1a44ef98d4b1af24/Cargo.lock;
       outputHashes = {
         "xcb-imdkit-0.3.0" = "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo=";
         "sqlite-cache-0.1.3" = "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=";

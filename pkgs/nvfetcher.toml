@@ -1,6 +1,7 @@
 [san-francisco-pro]
 src.git = "https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts"
 fetch.git = "https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts"
+
 [wezterm]
 src.git = "https://github.com/wez/wezterm"
 fetch.git = "https://github.com/wez/wezterm"
@@ -12,8 +13,8 @@ src.git = "https://github.com/alexays/waybar"
 fetch.git = "https://github.com/alexays/waybar"
 
 [firefox-gnome-theme]
-src.git = "https://github.com/rafaelmardojai/firefox-gnome-theme"
-fetch.git = "https://github.com/rafaelmardojai/firefox-gnome-theme"
+src.github = "rafaelmardojai/firefox-gnome-theme"
+fetch.github = "rafaelmardojai/firefox-gnome-theme"
 
 [whitesur-gtk-theme]
 src.git = "https://github.com/vinceliuice/WhiteSur-gtk-theme"

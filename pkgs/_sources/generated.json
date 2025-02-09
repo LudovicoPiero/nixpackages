@@ -21,7 +21,7 @@
     },
     "firefox-gnome-theme": {
         "cargoLocks": null,
-        "date": "2025-02-09",
+        "date": null,
         "extract": null,
         "name": "firefox-gnome-theme",
         "passthru": null,
@@ -31,13 +31,14 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "71eb4ac85675be51fed9daf89fcbc07c594e2d2c",
-            "sha256": "sha256-VtrjCxGdDdl/2jhsfHpemdHOWd1a96hq9MvTufnXLW0=",
+            "owner": "rafaelmardojai",
+            "repo": "firefox-gnome-theme",
+            "rev": "v135",
+            "sha256": "sha256-OtF9hFsFXLpCpz5Oy+I7yAE6GgenpFEzUXTc9AtoZQk=",
             "sparseCheckout": [],
-            "type": "git",
-            "url": "https://github.com/rafaelmardojai/firefox-gnome-theme"
+            "type": "github"
         },
-        "version": "71eb4ac85675be51fed9daf89fcbc07c594e2d2c"
+        "version": "v135"
     },
     "san-francisco-pro": {
         "cargoLocks": null,
@@ -82,7 +83,7 @@
     "wezterm": {
         "cargoLocks": {
             "Cargo.lock": [
-                "./wezterm-ef689c5eee15270febef5ed02eda0d7960e85496/Cargo.lock",
+                "./wezterm-1bd7e9ec398de9c92d80fe5d1a44ef98d4b1af24/Cargo.lock",
                 {
                     "sqlite-cache-0.1.3": "sha256-sBAC8MsQZgH+dcWpoxzq9iw5078vwzCijgyQnMOWIkk=",
                     "xcb-imdkit-0.3.0": "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo="
@@ -99,13 +100,13 @@
             "fetchSubmodules": true,
             "leaveDotGit": false,
             "name": null,
-            "rev": "ef689c5eee15270febef5ed02eda0d7960e85496",
-            "sha256": "sha256-qsF3e2F9u2VYaCy7Yn9XOVsDs9VWuOL9zY/zj6TX7kY=",
+            "rev": "1bd7e9ec398de9c92d80fe5d1a44ef98d4b1af24",
+            "sha256": "sha256-c74YLv775mZgZ8y2cJ+Xuue91s4491TWKkGl1zwztYU=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/wez/wezterm"
         },
-        "version": "ef689c5eee15270febef5ed02eda0d7960e85496"
+        "version": "1bd7e9ec398de9c92d80fe5d1a44ef98d4b1af24"
     },
     "whitesur-gtk-theme": {
         "cargoLocks": null,

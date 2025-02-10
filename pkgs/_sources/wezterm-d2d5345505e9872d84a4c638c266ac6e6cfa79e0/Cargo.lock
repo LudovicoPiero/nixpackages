@@ -994,7 +994,7 @@ dependencies = [
  "nix 0.28.0",
  "notify",
  "once_cell",
- "ordered-float",
+ "ordered-float 4.6.0",
  "portable-pty",
  "promise",
  "serde",
@@ -1571,6 +1571,15 @@ name = "equivalent"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5443807d6dff69373d433ab9ef5378ad8df50ca6298caf15de6e52e24aaf54d5"
+
+[[package]]
+name = "erased-serde"
+version = "0.4.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2b73807008a3c7f171cc40312f37d95ef0396e048b5848d775f54b1a4dd4a0d3"
+dependencies = [
+ "serde",
+]
 
 [[package]]
 name = "errno"
@@ -3046,9 +3055,9 @@ dependencies = [
 
 [[package]]
 name = "libssh-rs"
-version = "0.3.3"
+version = "0.3.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4d46682cfd8dc53c52471cfed5eedcc9248c318f3c8df174ec1b8c4f41565f98"
+checksum = "a40b06af49643baa29a60fe1905275c46b336ed4d8d0aabe7b170a071c1038c4"
 dependencies = [
  "bitflags 1.3.2",
  "libc",
@@ -3059,9 +3068,9 @@ dependencies = [
 
 [[package]]
 name = "libssh-rs-sys"
-version = "0.2.4"
+version = "0.2.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "205ceca5947f473c76f34175de70b15d9e8fadbbdb1bba45d4973037bbdb5fc7"
+checksum = "01d528ea9ac190fa364ff12193da82222dfc645e7ab28666ae91493bd288a1a0"
 dependencies = [
  "cc",
  "libz-sys",
@@ -3203,11 +3212,11 @@ dependencies = [
 
 [[package]]
 name = "mac_address"
-version = "1.1.7"
+version = "1.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8836fae9d0d4be2c8b4efcdd79e828a2faa058a90d005abf42f91cac5493a08e"
+checksum = "c0aeb26bf5e836cc1c341c8106051b573f1766dfa05aa87f0b98be5e51b02303"
 dependencies = [
- "nix 0.28.0",
+ "nix 0.29.0",
  "winapi",
 ]
 
@@ -3376,11 +3385,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d111deb18a9c9bd33e1541309f4742523bfab01d276bfa9a27519f6de9c11dc7"
 dependencies = [
  "bstr",
+ "erased-serde",
  "futures-util",
  "mlua-sys",
  "num-traits",
  "once_cell",
  "rustc-hash 2.1.1",
+ "serde",
+ "serde-value",
 ]
 
 [[package]]
@@ -3546,7 +3558,6 @@ dependencies = [
  "cfg-if",
  "cfg_aliases 0.1.1",
  "libc",
- "memoffset",
 ]
 
 [[package]]
@@ -3866,6 +3877,15 @@ dependencies = [
  "openssl-src",
  "pkg-config",
  "vcpkg",
+]
+
+[[package]]
+name = "ordered-float"
+version = "2.10.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "68f19d67e5a2795c94e73e0bb1cc1a7edeb2e28efd39e2e1c9b7a40c1108b11c"
+dependencies = [
+ "num-traits",
 ]
 
 [[package]]
@@ -4916,6 +4936,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "serde-value"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f3a1a3341211875ef120e117ea7fd5228530ae7e7036a779fdc9117be6b3282c"
+dependencies = [
+ "ordered-float 2.10.1",
+ "serde",
+]
+
+[[package]]
 name = "serde_derive"
 version = "1.0.217"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5052,7 +5082,7 @@ dependencies = [
  "config",
  "lazy_static",
  "luahelper",
- "ordered-float",
+ "ordered-float 4.6.0",
  "wezterm-dynamic",
 ]
 
@@ -5537,7 +5567,7 @@ checksum = "8f50febec83f5ee1df3015341d8bd429f2d1cc62bcba7ea2076759d315084683"
 
 [[package]]
 name = "termwiz"
-version = "0.22.0"
+version = "0.23.0"
 dependencies = [
  "anyhow",
  "base64 0.21.7",
@@ -5560,7 +5590,7 @@ dependencies = [
  "nix 0.28.0",
  "num-derive",
  "num-traits",
- "ordered-float",
+ "ordered-float 4.6.0",
  "pest",
  "pest_derive",
  "phf",
@@ -6445,11 +6475,10 @@ dependencies = [
 
 [[package]]
 name = "wezterm-blob-leases"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
- "getrandom 0.2.15",
+ "getrandom 0.3.1",
  "mac_address",
- "once_cell",
  "serde",
  "sha2",
  "tempfile",
@@ -6516,11 +6545,11 @@ dependencies = [
 
 [[package]]
 name = "wezterm-dynamic"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "log",
  "maplit",
- "ordered-float",
+ "ordered-float 4.6.0",
  "strsim",
  "thiserror 1.0.69",
  "wezterm-dynamic-derive",
@@ -6528,7 +6557,7 @@ dependencies = [
 
 [[package]]
 name = "wezterm-dynamic-derive"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -6562,7 +6591,7 @@ dependencies = [
  "memmap2 0.9.5",
  "metrics",
  "objc",
- "ordered-float",
+ "ordered-float 4.6.0",
  "rangeset",
  "termwiz",
  "thiserror 1.0.69",
@@ -6617,7 +6646,7 @@ dependencies = [
  "mux-lua",
  "nucleo-matcher",
  "once_cell",
- "ordered-float",
+ "ordered-float 4.6.0",
  "parking_lot",
  "portable-pty",
  "promise",
@@ -6800,7 +6829,7 @@ dependencies = [
  "lru",
  "miniz_oxide 0.7.4",
  "num-traits",
- "ordered-float",
+ "ordered-float 4.6.0",
  "serde",
  "terminfo",
  "termwiz",

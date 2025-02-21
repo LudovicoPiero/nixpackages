@@ -1,10 +1,9 @@
 {
   lib,
-  stdenvNoCC,
-  dialog,
+  stdenv,
   gitUpdater,
+  dialog,
   glib,
-  gnome-shell,
   gnome-themes-extra,
   jdupes,
   libxml2,
@@ -14,39 +13,32 @@
   colorVariants ? [ ], # default: all
   opacityVariants ? [ ], # default: all
   themeVariants ? [ ], # default: default (BigSur-like theme)
-  nautilusSize ? null, # default: 200px
+  schemeVariants ? [ ], # default: standard
+  iconVariant ? null, # default: standard (Apple logo)
+  nautilusStyle ? null, # default: stable (BigSur-like style)
   panelOpacity ? null, # default: 15%
   panelSize ? null, # default: 32px
+  roundedMaxWindow ? false, # default: false
+  darkerColor ? false, # default = false
   sources,
 }:
 
 let
   pname = "whitesur-gtk-theme";
   single = x: lib.optional (x != null) x;
+
 in
-lib.checkListOfEnum "${pname}: alt variants"
-  [
-    "normal"
-    "alt"
-    "all"
-  ]
-  altVariants
+lib.checkListOfEnum "${pname}: window control buttons variants" [ "normal" "alt" "all" ] altVariants
   lib.checkListOfEnum
   "${pname}: color variants"
-  [
-    "light"
-    "dark"
-  ]
+  [ "light" "dark" ]
   colorVariants
   lib.checkListOfEnum
   "${pname}: opacity variants"
-  [
-    "normal"
-    "solid"
-  ]
+  [ "normal" "solid" ]
   opacityVariants
   lib.checkListOfEnum
-  "${pname}: theme variants"
+  "${pname}: accent color variants"
   [
     "default"
     "blue"
@@ -61,43 +53,52 @@ lib.checkListOfEnum "${pname}: alt variants"
   ]
   themeVariants
   lib.checkListOfEnum
-  "${pname}: nautilus sidebar minimum width"
+  "${pname}: colorscheme style variants"
+  [ "standard" "nord" ]
+  schemeVariants
+  lib.checkListOfEnum
+  "${pname}: activities icon variants"
   [
-    "default"
-    "180"
-    "220"
-    "240"
-    "260"
-    "280"
+    "standard"
+    "apple"
+    "simple"
+    "gnome"
+    "ubuntu"
+    "tux"
+    "arch"
+    "manjaro"
+    "fedora"
+    "debian"
+    "void"
+    "opensuse"
+    "popos"
+    "mxlinux"
+    "zorin"
+    "budgie"
+    "gentoo"
   ]
-  (single nautilusSize)
+  (single iconVariant)
+  lib.checkListOfEnum
+  "${pname}: nautilus style"
+  [ "stable" "normal" "mojave" "glassy" "right" ]
+  (single nautilusStyle)
   lib.checkListOfEnum
   "${pname}: panel opacity"
-  [
-    "default"
-    "30"
-    "45"
-    "60"
-    "75"
-  ]
+  [ "default" "30" "45" "60" "75" ]
   (single panelOpacity)
   lib.checkListOfEnum
   "${pname}: panel size"
-  [
-    "default"
-    "smaller"
-    "bigger"
-  ]
+  [ "default" "smaller" "bigger" ]
   (single panelSize)
 
-  stdenvNoCC.mkDerivation
+  stdenv.mkDerivation
   {
+
     inherit (sources.whitesur-gtk-theme) src version pname;
 
     nativeBuildInputs = [
       dialog
       glib
-      gnome-shell
       jdupes
       libxml2
       sassc
@@ -114,10 +115,10 @@ lib.checkListOfEnum "${pname}: alt variants"
       done
 
       # Do not provide `sudo`, as it is not needed in our use case of the install script
-      substituteInPlace libs/lib-core.sh --replace-quiet '$(which sudo)' false
+      substituteInPlace libs/lib-core.sh --replace-fail '$(which sudo)' false
 
       # Provides a dummy home directory
-      substituteInPlace libs/lib-core.sh --replace-quiet 'MY_HOME=$(getent passwd "''${MY_USERNAME}" | cut -d: -f6)' 'MY_HOME=/tmp'
+      substituteInPlace libs/lib-core.sh --replace-fail 'MY_HOME=$(getent passwd "''${MY_USERNAME}" | cut -d: -f6)' 'MY_HOME=/tmp'
     '';
 
     dontBuild = true;
@@ -127,14 +128,18 @@ lib.checkListOfEnum "${pname}: alt variants"
 
       mkdir -p $out/share/themes
 
-      ./install.sh  \
+      ./install.sh \
         ${toString (map (x: "--alt " + x) altVariants)} \
         ${toString (map (x: "--color " + x) colorVariants)} \
         ${toString (map (x: "--opacity " + x) opacityVariants)} \
         ${toString (map (x: "--theme " + x) themeVariants)} \
-        ${lib.optionalString (nautilusSize != null) ("--size " + nautilusSize)} \
-        ${lib.optionalString (panelOpacity != null) ("--panel-opacity " + panelOpacity)} \
-        ${lib.optionalString (panelSize != null) ("--panel-size " + panelSize)} \
+        ${toString (map (x: "--scheme " + x) schemeVariants)} \
+        ${lib.optionalString (nautilusStyle != null) ("--nautilus " + nautilusStyle)} \
+        ${lib.optionalString roundedMaxWindow "--roundedmaxwindow"} \
+        ${lib.optionalString darkerColor "--darkercolor"} \
+        ${lib.optionalString (iconVariant != null) ("--gnome-shell -i " + iconVariant)} \
+        ${lib.optionalString (panelSize != null) ("--gnome-shell -panelheight " + panelSize)} \
+        ${lib.optionalString (panelOpacity != null) ("--gnome-shell -panelopacity " + panelOpacity)} \
         --dest $out/share/themes
 
       jdupes --quiet --link-soft --recurse $out/share

@@ -42,17 +42,17 @@
   };
   waybar = {
     pname = "waybar";
-    version = "0b87af93724b0403b3c7d0e329793acda2818b49";
+    version = "8490a1d9b9a5c8770dd63e9faca0a5e01acedcae";
     src = fetchgit {
       url = "https://github.com/alexays/waybar";
-      rev = "0b87af93724b0403b3c7d0e329793acda2818b49";
+      rev = "8490a1d9b9a5c8770dd63e9faca0a5e01acedcae";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-XsQz2u8fYP4kodQaBKAZkUZ7RpOYv0Ml2Pl9BjuBi9w=";
+      sha256 = "sha256-VpT3ePqmo75Ni6/02KFGV6ltnpiV70/ovG/p1f2wKkU=";
     };
-    date = "2025-02-20";
+    date = "2025-02-21";
   };
   wezterm = {
     pname = "wezterm";

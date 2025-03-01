@@ -138,6 +138,9 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://wezfurlong.org/wezterm";
     license = lib.licenses.mit;
     mainProgram = "wezterm";
-    maintainers = with lib.maintainers; [ LudovicoPiero MaximilianSforza ];
+    maintainers = with lib.maintainers; [
+      LudovicoPiero
+      MaximilianSforza
+    ];
   };
 }

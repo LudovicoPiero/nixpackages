@@ -17,7 +17,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
 
   sourceRoot = ".";
 
-  nativeBuildInputs = [unzip];
+  nativeBuildInputs = [ unzip ];
 
   installPhase = ''
     runHook preInstall
@@ -32,7 +32,10 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "CJK programming font based on Iosevka and Source Han Sans";
     homepage = "https://github.com/be5invis/Sarasa-Gothic";
     license = lib.licenses.ofl;
-    maintainers = with lib.maintainers; [LudovicoPiero MaximilianSforza];
+    maintainers = with lib.maintainers; [
+      LudovicoPiero
+      MaximilianSforza
+    ];
     platforms = lib.platforms.all;
   };
 })

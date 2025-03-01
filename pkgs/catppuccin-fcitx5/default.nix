@@ -18,6 +18,9 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     description = "Soothing pastel theme for Fcitx5";
     homepage = "https://github.com/catppuccin/fcitx5";
     license = with lib.licenses; [ mit ];
-    maintainers = with lib.maintainers; [ LudovicoPiero MaximilianSforza ];
+    maintainers = with lib.maintainers; [
+      LudovicoPiero
+      MaximilianSforza
+    ];
   };
 })

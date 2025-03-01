@@ -154,6 +154,9 @@ lib.checkListOfEnum "${pname}: window control buttons variants" [ "normal" "alt"
       homepage = "https://github.com/vinceliuice/WhiteSur-gtk-theme";
       license = lib.licenses.mit;
       platforms = lib.platforms.unix;
-      maintainers = [ lib.maintainers.LudovicoPiero MaximilianSforza ];
+      maintainers = [
+        lib.maintainers.LudovicoPiero
+        MaximilianSforza
+      ];
     };
   }

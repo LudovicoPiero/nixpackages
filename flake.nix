@@ -7,9 +7,10 @@
     rust-overlay.url = "github:oxalica/rust-overlay";
   };
 
-  outputs = inputs @ {flake-parts, ...}:
-    flake-parts.lib.mkFlake {inherit inputs;} {
-      imports = [./pkgs];
+  outputs =
+    inputs@{ flake-parts, ... }:
+    flake-parts.lib.mkFlake { inherit inputs; } {
+      imports = [ ./pkgs ];
 
       systems = [
         "x86_64-linux"
@@ -18,22 +19,24 @@
         "x86_64-darwin"
       ];
 
-      perSystem = {
-        config,
-        self',
-        inputs',
-        pkgs,
-        system,
-        ...
-      }: {
-        # This sets `pkgs` to a nixpkgs with allowUnfree option set.
-        _module.args.pkgs = import inputs.nixpkgs {
-          inherit system;
-          overlays = [inputs.rust-overlay.overlays.default];
-          config.allowUnfree = true;
-        };
+      perSystem =
+        {
+          config,
+          self',
+          inputs',
+          pkgs,
+          system,
+          ...
+        }:
+        {
+          # This sets `pkgs` to a nixpkgs with allowUnfree option set.
+          _module.args.pkgs = import inputs.nixpkgs {
+            inherit system;
+            overlays = [ inputs.rust-overlay.overlays.default ];
+            config.allowUnfree = true;
+          };
 
-        formatter = pkgs.alejandra;
-      };
+          formatter = pkgs.nixfmt-rfc-style;
+        };
     };
 }

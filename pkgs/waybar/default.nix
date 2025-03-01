@@ -175,7 +175,7 @@ in
       changelog = "https://github.com/alexays/waybar/releases/tag/${finalAttrs.version}";
       license = lib.licenses.mit;
       mainProgram = "waybar";
-      maintainers = with lib.maintainers; [ludovicopiero];
+      maintainers = with lib.maintainers; [LudovicoPiero MaximilianSforza];
       inherit (wlroots.meta) platforms;
     };
   })

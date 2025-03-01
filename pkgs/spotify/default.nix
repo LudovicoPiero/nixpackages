@@ -224,7 +224,7 @@ in
       description = "Play music from the Spotify music service";
       sourceProvenance = with lib.sourceTypes; [binaryNativeCode];
       # license = licenses.unfree;
-      maintainers = with lib.maintainers; [ludovicopiero];
+      maintainers = with lib.maintainers; [LudovicoPiero MaximilianSforza];
       platforms = ["x86_64-linux"];
     };
   }

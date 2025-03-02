@@ -22,7 +22,7 @@ stdenvNoCC.mkDerivation (_finalAttrs: {
     license = lib.licenses.unlicense;
     maintainers = with lib.maintainers; [
       LudovicoPiero
-      MaximilianSforza
+
     ];
   };
 })

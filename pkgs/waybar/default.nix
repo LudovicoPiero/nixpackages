@@ -176,7 +176,7 @@ stdenv.mkDerivation (finalAttrs: {
     mainProgram = "waybar";
     maintainers = with lib.maintainers; [
       LudovicoPiero
-      MaximilianSforza
+
     ];
     inherit (wlroots.meta) platforms;
   };

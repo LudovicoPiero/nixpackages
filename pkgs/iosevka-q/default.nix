@@ -217,7 +217,7 @@ buildNpmPackage rec {
     platforms = platforms.all;
     maintainers = with maintainers; [
       LudovicoPiero
-      MaximilianSforza
+
     ];
   };
 }

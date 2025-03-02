@@ -34,7 +34,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     license = lib.licenses.ofl;
     maintainers = with lib.maintainers; [
       LudovicoPiero
-      MaximilianSforza
+
     ];
     platforms = lib.platforms.all;
   };

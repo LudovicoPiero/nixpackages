@@ -140,7 +140,7 @@ rustPlatform.buildRustPackage rec {
     mainProgram = "wezterm";
     maintainers = with lib.maintainers; [
       LudovicoPiero
-      MaximilianSforza
+
     ];
   };
 }

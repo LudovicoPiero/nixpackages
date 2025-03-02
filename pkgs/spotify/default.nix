@@ -229,7 +229,7 @@ stdenv.mkDerivation {
     # license = licenses.unfree;
     maintainers = with lib.maintainers; [
       LudovicoPiero
-      MaximilianSforza
+
     ];
     platforms = [ "x86_64-linux" ];
   };

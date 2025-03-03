@@ -122,9 +122,8 @@
   extraParameters ? null,
   set ? "Q",
 }:
-assert (privateBuildPlan != null) -> set != null;
-assert (extraParameters != null) -> set != null;
-buildNpmPackage rec {
+let
+  #NOTE: Moved here because newer version of nix-update require to do this
   pname = "Iosevka${toString set}";
   version = "33.0.0";
 
@@ -136,6 +135,17 @@ buildNpmPackage rec {
   };
 
   npmDepsHash = "sha256-Luzut1FLNS1MQ90ObbMNdKImOLhn/acrR1rja0jO0MI=";
+in
+
+assert (privateBuildPlan != null) -> set != null;
+assert (extraParameters != null) -> set != null;
+buildNpmPackage rec {
+  inherit
+    pname
+    version
+    src
+    npmDepsHash
+    ;
 
   nativeBuildInputs =
     [

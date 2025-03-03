@@ -69,6 +69,8 @@ jobs:
 
       - name: Run nix-update
         run: |
+          export LC_ALL=en_US.UTF-8
+          export LANG=en_US.UTF-8
           nix run nixpkgs#nix-update -- --flake ${{ matrix.packages }} --commit
 
       - name: Create Pull Request

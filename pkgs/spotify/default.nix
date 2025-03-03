@@ -228,7 +228,7 @@ stdenv.mkDerivation {
     sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     # license = licenses.unfree;
     maintainers = with lib.maintainers; [
-      LudovicoPiero
+      ludovicopiero
 
     ];
     platforms = [ "x86_64-linux" ];

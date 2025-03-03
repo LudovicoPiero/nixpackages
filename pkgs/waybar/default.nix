@@ -175,7 +175,7 @@ stdenv.mkDerivation (finalAttrs: {
     license = lib.licenses.mit;
     mainProgram = "waybar";
     maintainers = with lib.maintainers; [
-      LudovicoPiero
+      ludovicopiero
 
     ];
     inherit (wlroots.meta) platforms;

@@ -139,7 +139,7 @@ rustPlatform.buildRustPackage rec {
     license = lib.licenses.mit;
     mainProgram = "wezterm";
     maintainers = with lib.maintainers; [
-      LudovicoPiero
+      ludovicopiero
 
     ];
   };

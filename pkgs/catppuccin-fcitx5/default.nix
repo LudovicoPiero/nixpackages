@@ -19,7 +19,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     homepage = "https://github.com/catppuccin/fcitx5";
     license = with lib.licenses; [ mit ];
     maintainers = with lib.maintainers; [
-      LudovicoPiero
+      ludovicopiero
 
     ];
   };

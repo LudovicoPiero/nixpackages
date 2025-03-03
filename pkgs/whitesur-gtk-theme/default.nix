@@ -155,7 +155,7 @@ lib.checkListOfEnum "${pname}: window control buttons variants" [ "normal" "alt"
       license = lib.licenses.mit;
       platforms = lib.platforms.unix;
       maintainers = [
-        lib.maintainers.LudovicoPiero
+        lib.maintainers.ludovicopiero
 
       ];
     };

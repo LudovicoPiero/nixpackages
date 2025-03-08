@@ -40,7 +40,8 @@ let
   };
 in
 rustPlatform.buildRustPackage rec {
-  inherit (sources.wezterm) pname version src;
+  inherit (sources.wezterm) pname src;
+  version = "0-unstable-${sources.wezterm.date}";
 
   postPatch = ''
     echo ${version} > .tag

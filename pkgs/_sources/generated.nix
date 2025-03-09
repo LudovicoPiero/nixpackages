@@ -56,23 +56,23 @@
   };
   wezterm = {
     pname = "wezterm";
-    version = "18371a158c611cc044b29af40b3d8b6d6d273fdb";
+    version = "46cfda66654670e97c834cdb064035336a36e9a5";
     src = fetchgit {
       url = "https://github.com/wez/wezterm";
-      rev = "18371a158c611cc044b29af40b3d8b6d6d273fdb";
+      rev = "46cfda66654670e97c834cdb064035336a36e9a5";
       fetchSubmodules = true;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-rzNh+K/M9qbDkxj3WxSo1nI5BMWLcm3F6WsDEG/HenA=";
+      sha256 = "sha256-9rDVRdIDo2WOuXpPTzfBaND7kDM6UbqXBpcHlShVgsU=";
     };
     cargoLock."Cargo.lock" = {
-      lockFile = ./wezterm-18371a158c611cc044b29af40b3d8b6d6d273fdb/Cargo.lock;
+      lockFile = ./wezterm-46cfda66654670e97c834cdb064035336a36e9a5/Cargo.lock;
       outputHashes = {
         "xcb-imdkit-0.3.0" = "sha256-77KaJO+QJWy3tJ9AF1TXKaQHpoVOfGIRqteyqpQaSWo=";
       };
     };
-    date = "2025-03-08";
+    date = "2025-03-09";
   };
   whitesur-gtk-theme = {
     pname = "whitesur-gtk-theme";

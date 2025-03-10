@@ -13,8 +13,8 @@ src.git = "https://github.com/alexays/waybar"
 fetch.git = "https://github.com/alexays/waybar"
 
 [firefox-gnome-theme]
-src.github = "rafaelmardojai/firefox-gnome-theme"
-fetch.github = "rafaelmardojai/firefox-gnome-theme"
+src.git = "https://github.com/rafaelmardojai/firefox-gnome-theme"
+fetch.git = "https://github.com/rafaelmardojai/firefox-gnome-theme"
 
 [whitesur-gtk-theme]
 src.git = "https://github.com/vinceliuice/WhiteSur-gtk-theme"

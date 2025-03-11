@@ -18,14 +18,6 @@
   xcbutilwm,
   wayland,
   zlib,
-  zstd,
-  CoreGraphics,
-  Cocoa,
-  Foundation,
-  System,
-  libiconv,
-  oniguruma,
-  UserNotifications,
   nixosTests,
   runCommand,
   vulkan-loader,
@@ -43,12 +35,21 @@ rustPlatform.buildRustPackage rec {
   inherit (sources.wezterm) pname src;
   version = "0-unstable-${sources.wezterm.date}";
 
-  postPatch = ''
-    echo ${version} > .tag
+  postPatch =
+    ''
+      echo ${version} > .tag
 
-    # tests are failing with: Unable to exchange encryption keys
-    rm -r wezterm-ssh/tests
-  '';
+      # hash does not work well with NixOS
+      substituteInPlace assets/shell-integration/wezterm.sh \
+        --replace-fail 'hash wezterm 2>/dev/null' 'command type -P wezterm &>/dev/null' \
+        --replace-fail 'hash base64 2>/dev/null' 'command type -P base64 &>/dev/null' \
+        --replace-fail 'hash hostname 2>/dev/null' 'command type -P hostname &>/dev/null' \
+        --replace-fail 'hash hostnamectl 2>/dev/null' 'command type -P hostnamectl &>/dev/null'
+    ''
+    + lib.optionalString stdenv.hostPlatform.isDarwin ''
+      # many tests fail with: No such file or directory
+      rm -r wezterm-ssh/tests
+    '';
 
   cargoLock = sources.wezterm.cargoLock."Cargo.lock";
 
@@ -57,38 +58,28 @@ rustPlatform.buildRustPackage rec {
     ncurses # tic for terminfo
     pkg-config
     python3
-  ] ++ lib.optional stdenv.isDarwin perl;
+  ] ++ lib.optional stdenv.hostPlatform.isDarwin perl;
 
   buildInputs =
     [
       fontconfig
-      oniguruma
+      openssl
       zlib
-      zstd
     ]
-    ++ lib.optionals stdenv.isLinux [
+    ++ lib.optionals stdenv.hostPlatform.isLinux [
       libX11
       libxcb
       libxkbcommon
-      openssl
       wayland
       xcbutil
       xcbutilimage
       xcbutilkeysyms
       xcbutilwm # contains xcb-ewmh among others
-    ]
-    ++ lib.optionals stdenv.isDarwin [
-      Cocoa
-      CoreGraphics
-      Foundation
-      libiconv
-      System
-      UserNotifications
     ];
 
   buildFeatures = [ "distro-defaults" ];
 
-  env.NIX_LDFLAGS = lib.optionalString stdenv.isDarwin "-framework System";
+  env.NIX_LDFLAGS = lib.optionalString stdenv.hostPlatform.isDarwin "-framework System";
 
   postInstall = ''
     mkdir -p $out/nix-support
@@ -108,13 +99,13 @@ rustPlatform.buildRustPackage rec {
   '';
 
   preFixup =
-    lib.optionalString stdenv.isLinux ''
+    lib.optionalString stdenv.hostPlatform.isLinux ''
       patchelf \
         --add-needed "${libGL}/lib/libEGL.so.1" \
         --add-needed "${vulkan-loader}/lib/libvulkan.so.1" \
         $out/bin/wezterm-gui
     ''
-    + lib.optionalString stdenv.isDarwin ''
+    + lib.optionalString stdenv.hostPlatform.isDarwin ''
       mkdir -p "$out/Applications"
       OUT_APP="$out/Applications/WezTerm.app"
       cp -r assets/macos/WezTerm.app "$OUT_APP"

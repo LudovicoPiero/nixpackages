@@ -17,17 +17,17 @@
   };
   firefox-gnome-theme = {
     pname = "firefox-gnome-theme";
-    version = "ca1ebf55d1811ddfdd0eb24bdaa656d3c69b5839";
+    version = "a44d3b0afd7d0cc4db95ccb4f4f34d4d81eacd9e";
     src = fetchgit {
       url = "https://github.com/rafaelmardojai/firefox-gnome-theme";
-      rev = "ca1ebf55d1811ddfdd0eb24bdaa656d3c69b5839";
+      rev = "a44d3b0afd7d0cc4db95ccb4f4f34d4d81eacd9e";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-1+NdJ67l7M/LG91Tn7ebInBS/HwOpjty+LQJK99PoH0=";
+      sha256 = "sha256-ZVlI3ZzWaBcrYuq6u51/gGa+pOEOMZvgticmSQhnMDo=";
     };
-    date = "2025-03-12";
+    date = "2025-03-13";
   };
   san-francisco-pro = {
     pname = "san-francisco-pro";
@@ -79,16 +79,16 @@
   };
   whitesur-gtk-theme = {
     pname = "whitesur-gtk-theme";
-    version = "a087b8f7f078bd229f45f64269643336bc465f3a";
+    version = "f78141b7bba73a808871e4d36bc869119945a0da";
     src = fetchgit {
       url = "https://github.com/vinceliuice/WhiteSur-gtk-theme";
-      rev = "a087b8f7f078bd229f45f64269643336bc465f3a";
+      rev = "f78141b7bba73a808871e4d36bc869119945a0da";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-n9wPWtC6OjUAUpZLB/I2uFCiJ+UrdE6NeZrbUc/LiE0=";
+      sha256 = "sha256-EJeyVqEs1SgtZccIQQVloulocHajURBsypbdFjuvtnE=";
     };
-    date = "2025-02-26";
+    date = "2025-03-13";
   };
 }

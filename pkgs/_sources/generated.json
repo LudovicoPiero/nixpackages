@@ -21,7 +21,7 @@
     },
     "firefox-gnome-theme": {
         "cargoLocks": null,
-        "date": "2025-03-12",
+        "date": "2025-03-13",
         "extract": null,
         "name": "firefox-gnome-theme",
         "passthru": null,
@@ -31,13 +31,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "ca1ebf55d1811ddfdd0eb24bdaa656d3c69b5839",
-            "sha256": "sha256-1+NdJ67l7M/LG91Tn7ebInBS/HwOpjty+LQJK99PoH0=",
+            "rev": "a44d3b0afd7d0cc4db95ccb4f4f34d4d81eacd9e",
+            "sha256": "sha256-ZVlI3ZzWaBcrYuq6u51/gGa+pOEOMZvgticmSQhnMDo=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/rafaelmardojai/firefox-gnome-theme"
         },
-        "version": "ca1ebf55d1811ddfdd0eb24bdaa656d3c69b5839"
+        "version": "a44d3b0afd7d0cc4db95ccb4f4f34d4d81eacd9e"
     },
     "san-francisco-pro": {
         "cargoLocks": null,
@@ -108,7 +108,7 @@
     },
     "whitesur-gtk-theme": {
         "cargoLocks": null,
-        "date": "2025-02-26",
+        "date": "2025-03-13",
         "extract": null,
         "name": "whitesur-gtk-theme",
         "passthru": null,
@@ -118,12 +118,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "a087b8f7f078bd229f45f64269643336bc465f3a",
-            "sha256": "sha256-n9wPWtC6OjUAUpZLB/I2uFCiJ+UrdE6NeZrbUc/LiE0=",
+            "rev": "f78141b7bba73a808871e4d36bc869119945a0da",
+            "sha256": "sha256-EJeyVqEs1SgtZccIQQVloulocHajURBsypbdFjuvtnE=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/vinceliuice/WhiteSur-gtk-theme"
         },
-        "version": "a087b8f7f078bd229f45f64269643336bc465f3a"
+        "version": "f78141b7bba73a808871e4d36bc869119945a0da"
     }
 }
